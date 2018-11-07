@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Triangulator.computeTriangles - openrndr</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.shape</a>&nbsp;/&nbsp;<a href="index.html">Triangulator</a>&nbsp;/&nbsp;<a href="./compute-triangles.html">computeTriangles</a><br/>
+<br/>
+<h1>computeTriangles</h1>
+<a name="org.openrndr.shape.Triangulator$computeTriangles(kotlin.collections.List((kotlin.Float)), kotlin.Int, kotlin.Int)"></a>
+<code><span class="keyword">fun </span><span class="identifier">computeTriangles</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Triangulator$computeTriangles(kotlin.collections.List((kotlin.Float)), kotlin.Int, kotlin.Int)/vertices">vertices</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.Triangulator$computeTriangles(kotlin.collections.List((kotlin.Float)), kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.shape.Triangulator$computeTriangles(kotlin.collections.List((kotlin.Float)), kotlin.Int, kotlin.Int)/count">count</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;vertices.size<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html"><span class="identifier">Short</span></a><span class="symbol">&gt;</span></code>
+<p>Triangulates the given (convex or concave) simple polygon to a list of triangle vertices.</p>
+<h3>Parameters</h3>
+<p><a name="vertices"></a>
+<code>vertices</code> - pairs describing vertices of the polygon, in either clockwise or counterclockwise order.</p>
+<p><strong>Return</strong><br/>
+triples of triangle indices in clockwise order. Note the returned array is reused for later calls to the same
+method.</p>
+</BODY>
+</HTML>

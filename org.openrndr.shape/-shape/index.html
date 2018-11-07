@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Shape - openrndr</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.shape</a>&nbsp;/&nbsp;<a href="./index.html">Shape</a><br/>
+<br/>
+<h1>Shape</h1>
+<code><span class="keyword">class </span><span class="identifier">Shape</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Shape</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$<init>(kotlin.collections.List((org.openrndr.shape.ShapeContour)))/contours">contours</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="contours.html">contours</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">contours</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="linear.html">linear</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">linear</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="outline.html">outline</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">outline</span><span class="symbol">: </span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a></code>
+<p>The outline of the shape</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="hole.html">hole</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hole</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$hole(kotlin.Int)/index">index</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a></code>
+<p>The indexed hole of the shape</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="map.html">map</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">map</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$map(kotlin.Function1((org.openrndr.shape.ShapeContour, )))/mapper">mapper</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Shape</span></a></code>
+<p>Apply a map to the shape. Maps every contour.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="polygon.html">polygon</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">polygon</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$polygon(kotlin.Double)/distanceTolerance">distanceTolerance</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.5<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Shape</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="transform.html">transform</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">transform</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Shape$transform(org.openrndr.math.Matrix44)/transform">transform</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Shape</span></a></code>
+<p>Apply a tranform to the shape</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

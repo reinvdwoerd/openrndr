@@ -1,0 +1,392 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>org.openrndr - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">openrndr</a>&nbsp;/&nbsp;<a href="./index.html">org.openrndr</a><br/>
+<br/>
+<h2>Package org.openrndr</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-application/index.html">Application</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Application</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-configuration/index.html">Configuration</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Configuration</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-drop-event/index.html">DropEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DropEvent</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-extension/index.html">Extension</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Extension</span></code>
+<p>Defines a Program extension. This is the interface for developers of OPENRNDR extensions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-extension-stage/index.html">ExtensionStage</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ExtensionStage</span></code>
+<p>Indicates the stage in which the extension is</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-key-event/index.html">KeyEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">KeyEvent</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-key-event-type/index.html">KeyEventType</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">KeyEventType</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-keyboard-modifier/index.html">KeyboardModifier</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">KeyboardModifier</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-mouse-button/index.html">MouseButton</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">MouseButton</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-mouse-event-type/index.html">MouseEventType</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">MouseEventType</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-presentation-mode/index.html">PresentationMode</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">PresentationMode</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-program/index.html">Program</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Program</span></code>
+<p>The Program class, this is where most user implementations start</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-pump-dispatcher/index.html">PumpDispatcher</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PumpDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MainCoroutineDispatcher</span><span class="symbol">, </span><span class="identifier">Delay</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-unfocus-behaviour/index.html">UnfocusBehaviour</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">UnfocusBehaviour</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-window-event/index.html">WindowEvent</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">WindowEvent</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-window-event-type/index.html">WindowEventType</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">WindowEventType</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-k-e-y_-a-r-r-o-w_-d-o-w-n.html">KEY_ARROW_DOWN</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_ARROW_DOWN</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-a-r-r-o-w_-l-e-f-t.html">KEY_ARROW_LEFT</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_ARROW_LEFT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-a-r-r-o-w_-r-i-g-h-t.html">KEY_ARROW_RIGHT</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_ARROW_RIGHT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-a-r-r-o-w_-u-p.html">KEY_ARROW_UP</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_ARROW_UP</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-b-a-c-k-s-p-a-c-e.html">KEY_BACKSPACE</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_BACKSPACE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-c-a-p-s-l-o-c-k.html">KEY_CAPSLOCK</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_CAPSLOCK</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-d-e-l-e-t-e.html">KEY_DELETE</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_DELETE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-e-n-d.html">KEY_END</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_END</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-e-n-t-e-r.html">KEY_ENTER</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_ENTER</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-e-s-c-a-p-e.html">KEY_ESCAPE</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_ESCAPE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f1.html">KEY_F1</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F1</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f10.html">KEY_F10</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F10</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f11.html">KEY_F11</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F11</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f12.html">KEY_F12</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F12</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f2.html">KEY_F2</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F2</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f3.html">KEY_F3</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F3</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f4.html">KEY_F4</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F4</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f5.html">KEY_F5</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F5</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f6.html">KEY_F6</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F6</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f7.html">KEY_F7</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F7</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f8.html">KEY_F8</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F8</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-f9.html">KEY_F9</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_F9</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-h-o-m-e.html">KEY_HOME</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_HOME</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-i-n-s-e-r-t.html">KEY_INSERT</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_INSERT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-l-e-f-t_-s-h-i-f-t.html">KEY_LEFT_SHIFT</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_LEFT_SHIFT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-p-a-g-e_-d-o-w-n.html">KEY_PAGE_DOWN</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_PAGE_DOWN</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-p-a-g-e_-u-p.html">KEY_PAGE_UP</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_PAGE_UP</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-p-r-i-n-t_-s-c-r-e-e-n.html">KEY_PRINT_SCREEN</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_PRINT_SCREEN</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-r-i-g-h-t_-s-h-i-f-t.html">KEY_RIGHT_SHIFT</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_RIGHT_SHIFT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-s-p-a-c-e-b-a-r.html">KEY_SPACEBAR</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_SPACEBAR</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-k-e-y_-t-a-b.html">KEY_TAB</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">KEY_TAB</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="application.html">application</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">application</span><span class="symbol">(</span><span class="identifier" id="org.openrndr$application(org.openrndr.Program, org.openrndr.Configuration)/program">program</span><span class="symbol">:</span>&nbsp;<a href="-program/index.html"><span class="identifier">Program</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr$application(org.openrndr.Program, org.openrndr.Configuration)/configuration">configuration</span><span class="symbol">:</span>&nbsp;<a href="-configuration/index.html"><span class="identifier">Configuration</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Configuration()<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="configuration.html">configuration</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">configuration</span><span class="symbol">(</span><span class="identifier" id="org.openrndr$configuration(kotlin.Function1((org.openrndr.Configuration, kotlin.Unit)))/builder">builder</span><span class="symbol">:</span>&nbsp;<a href="-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-configuration/index.html"><span class="identifier">Configuration</span></a></code>
+<p>Simple configuration builder</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="launch.html">launch</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="-program/index.html"><span class="identifier">Program</span></a><span class="symbol">.</span><span class="identifier">launch</span><span class="symbol">(</span><span class="identifier" id="org.openrndr$launch(org.openrndr.Program, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;EmptyCoroutineContext<span class="symbol">, </span><span class="identifier" id="org.openrndr$launch(org.openrndr.Program, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/start">start</span><span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineStart</span>&nbsp;<span class="symbol">=</span>&nbsp;CoroutineStart.DEFAULT<span class="symbol">, </span><span class="identifier" id="org.openrndr$launch(org.openrndr.Program, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">CoroutineScope</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="resource-url.html">resourceUrl</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">resourceUrl</span><span class="symbol">(</span><span class="identifier" id="org.openrndr$resourceUrl(kotlin.String, java.lang.Class((kotlin.Any)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr$resourceUrl(kotlin.String, java.lang.Class((kotlin.Any)))/class">class</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;Application::class.java<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

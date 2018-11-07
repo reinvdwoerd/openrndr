@@ -1,0 +1,329 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Filter - openrndr</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">Filter</a><br/>
+<br/>
+<h1>Filter</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Filter</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Filter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Filter$<init>(org.openrndr.draw.Shader, org.openrndr.draw.ShaderWatcher)/shader">shader</span><span class="symbol">:</span>&nbsp;<a href="../-shader/index.html"><span class="identifier">Shader</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Filter$<init>(org.openrndr.draw.Shader, org.openrndr.draw.ShaderWatcher)/watcher">watcher</span><span class="symbol">:</span>&nbsp;<a href="../-shader-watcher/index.html"><span class="identifier">ShaderWatcher</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="parameters.html">parameters</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">parameters</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="apply.html">apply</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">apply</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.RenderTarget, org.openrndr.draw.RenderTarget)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../-render-target/index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.RenderTarget, org.openrndr.draw.RenderTarget)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../-render-target/index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">apply</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Filter$apply(kotlin.Array((org.openrndr.draw.ColorBuffer)), kotlin.Array((org.openrndr.draw.ColorBuffer)))/source">source</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Filter$apply(kotlin.Array((org.openrndr.draw.ColorBuffer)), kotlin.Array((org.openrndr.draw.ColorBuffer)))/target">target</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">apply</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.ColorBuffer, org.openrndr.draw.ColorBuffer)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.ColorBuffer, org.openrndr.draw.ColorBuffer)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">apply</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.ColorBuffer, kotlin.Array((org.openrndr.draw.ColorBuffer)))/source">source</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.ColorBuffer, kotlin.Array((org.openrndr.draw.ColorBuffer)))/target">target</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">apply</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Filter$apply(kotlin.Array((org.openrndr.draw.ColorBuffer)), org.openrndr.draw.ColorBuffer)/source">source</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Filter$apply(kotlin.Array((org.openrndr.draw.ColorBuffer)), org.openrndr.draw.ColorBuffer)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="filter-vertex-code.html">filterVertexCode</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">filterVertexCode</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.dither/-a-dither/index.html">ADither</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ADither</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-add/index.html">Add</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Add</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blur/-approximate-gaussian-blur/index.html">ApproximateGaussianBlur</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ApproximateGaussianBlur</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blur/-box-blur/index.html">BoxBlur</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">BoxBlur</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.screenspace/-coc-blur/index.html">CocBlur</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">CocBlur</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-color-burn/index.html">ColorBurn</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorBurn</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-color-dodge/index.html">ColorDodge</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorDodge</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.color/-color-lookup/index.html">ColorLookup</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorLookup</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.color/-color-mix/index.html">ColorMix</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ColorMix</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-darken/index.html">Darken</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Darken</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.color/-delinearize/index.html">Delinearize</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Delinearize</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.antialias/-f-x-a-a/index.html">FXAA</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FXAA</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.transforms/-flip-vertically/index.html">FlipVertically</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FlipVertically</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blur/-gaussian-blur/index.html">GaussianBlur</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GaussianBlur</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-hard-light/index.html">HardLight</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">HardLight</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blur/-hash-blur/index.html">HashBlur</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">HashBlur</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.screenspace/-hex-dof/index.html">HexDof</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">HexDof</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.color/-hybrid-log-gamma/index.html">HybridLogGamma</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">HybridLogGamma</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.screenspace/-iterative-velocity-blur/index.html">IterativeVelocityBlur</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">IterativeVelocityBlur</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-lighten/index.html">Lighten</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Lighten</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.color/-linearize/index.html">Linearize</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Linearize</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-multiply/index.html">Multiply</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Multiply</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-multiply-contrast/index.html">MultiplyContrast</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">MultiplyContrast</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-normal/index.html">Normal</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Normal</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.screenspace/-occlusion-blur/index.html">OcclusionBlur</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">OcclusionBlur</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-overlay/index.html">Overlay</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Overlay</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.screenspace/-hex-dof/-pass1/index.html">Pass1</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Pass1</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.screenspace/-hex-dof/-pass2/index.html">Pass2</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Pass2</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-passthrough/index.html">Passthrough</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Passthrough</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.screenspace/-position-to-coc/index.html">PositionToCoc</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PositionToCoc</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-screen/index.html">Screen</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Screen</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.screenspace/-ssao/index.html">Ssao</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Ssao</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.screenspace/-sslr/index.html">Sslr</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Sslr</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.blend/-subtract/index.html">Subtract</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Subtract</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.unary/-subtract-constant/index.html">SubtractConstant</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SubtractConstant</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.color/-tonemap-uncharted2/index.html">TonemapUncharted2</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TonemapUncharted2</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../../org.openrndr.filter.screenspace/-velocity-blur/index.html">VelocityBlur</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">VelocityBlur</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

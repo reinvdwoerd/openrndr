@@ -1,0 +1,37 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Matrix44)org.openrndr.math/kotlin.-double/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Vector2)org.openrndr.math/kotlin.-double/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Vector3)org.openrndr.math/kotlin.-double/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Vector4)org.openrndr.math/kotlin.-double/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Int, org.openrndr.math.IntVector2)org.openrndr.math/kotlin.-int/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Int, org.openrndr.math.IntVector3)org.openrndr.math/kotlin.-int/times.html
+$dokka.location:org.openrndr.math$times(kotlin.Int, org.openrndr.math.IntVector4)org.openrndr.math/kotlin.-int/times.html
+org.openrndr
+org.openrndr.animatable
+org.openrndr.animatable.easing
+org.openrndr.binpack
+org.openrndr.color
+org.openrndr.draw
+org.openrndr.events
+org.openrndr.extensions
+org.openrndr.ffmpeg
+org.openrndr.filter
+org.openrndr.filter.antialias
+org.openrndr.filter.blend
+org.openrndr.filter.blur
+org.openrndr.filter.color
+org.openrndr.filter.dither
+org.openrndr.filter.screenspace
+org.openrndr.filter.transforms
+org.openrndr.filter.unary
+org.openrndr.internal
+org.openrndr.internal.gl3
+org.openrndr.internal.gl3.dds
+org.openrndr.math
+org.openrndr.math.transforms
+org.openrndr.platform
+org.openrndr.shadestyle
+org.openrndr.shape
+org.openrndr.svg
+org.openrndr.text

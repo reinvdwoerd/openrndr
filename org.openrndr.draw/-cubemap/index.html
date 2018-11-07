@@ -1,0 +1,103 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Cubemap - openrndr</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">Cubemap</a><br/>
+<br/>
+<h1>Cubemap</h1>
+<code><span class="keyword">interface </span><span class="identifier">Cubemap</span></code>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="width.html">width</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="bind.html">bind</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap$bind(kotlin.Int)/textureUnit">textureUnit</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="destroy.html">destroy</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">destroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="filter.html">filter</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">filter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap$filter(org.openrndr.draw.MinifyingFilter, org.openrndr.draw.MagnifyingFilter)/min">min</span><span class="symbol">:</span>&nbsp;<a href="../-minifying-filter/index.html"><span class="identifier">MinifyingFilter</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Cubemap$filter(org.openrndr.draw.MinifyingFilter, org.openrndr.draw.MagnifyingFilter)/mag">mag</span><span class="symbol">:</span>&nbsp;<a href="../-magnifying-filter/index.html"><span class="identifier">MagnifyingFilter</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="generate-mipmaps.html">generateMipmaps</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">generateMipmaps</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="side.html">side</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">side</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap$side(org.openrndr.draw.CubemapSide)/side">side</span><span class="symbol">:</span>&nbsp;<a href="../-cubemap-side/index.html"><span class="identifier">CubemapSide</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create.html">create</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorFormat.RGBa<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorType.UINT8<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Cubemap</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="from-url.html">fromUrl</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromUrl</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$fromUrl(kotlin.String)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Cubemap</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="from-urls.html">fromUrls</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromUrls</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$fromUrls(kotlin.collections.List((kotlin.String)))/urls">urls</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Cubemap</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../org.openrndr.internal.gl3/-cubemap-g-l3/index.html">CubemapGL3</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">CubemapGL3</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Cubemap</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,254 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Driver - openrndr</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.internal</a>&nbsp;/&nbsp;<a href="./index.html">Driver</a><br/>
+<br/>
+<h1>Driver</h1>
+<code><span class="keyword">interface </span><span class="identifier">Driver</span></code>
+<p>Driver interface. This is the internal interface</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="active-render-target.html">activeRenderTarget</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">activeRenderTarget</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-render-target/index.html"><span class="identifier">RenderTarget</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="context-i-d.html">contextID</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">contextID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="font-image-map-manager.html">fontImageMapManager</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">fontImageMapManager</span><span class="symbol">: </span><a href="../-font-map-manager/index.html"><span class="identifier">FontMapManager</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="font-vector-map-manager.html">fontVectorMapManager</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">fontVectorMapManager</span><span class="symbol">: </span><a href="../-font-map-manager/index.html"><span class="identifier">FontMapManager</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="shader-generators.html">shaderGenerators</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">shaderGenerators</span><span class="symbol">: </span><a href="../-shader-generators/index.html"><span class="identifier">ShaderGenerators</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="clear.html">clear</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">clear</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$clear(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/r">r</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$clear(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/g">g</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$clear(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/b">b</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$clear(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/a">a</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">clear</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$clear(org.openrndr.color.ColorRGBa)/color">color</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-buffer-texture.html">createBufferTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createBufferTexture</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createBufferTexture(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/elementCount">elementCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createBufferTexture(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-format/index.html"><span class="identifier">ColorFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createBufferTexture(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-type/index.html"><span class="identifier">ColorType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-buffer-texture/index.html"><span class="identifier">BufferTexture</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-color-buffer.html">createColorBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createColorBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createColorBuffer(kotlin.Int, kotlin.Int, kotlin.Double, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createColorBuffer(kotlin.Int, kotlin.Int, kotlin.Double, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createColorBuffer(kotlin.Int, kotlin.Int, kotlin.Double, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/contentScale">contentScale</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createColorBuffer(kotlin.Int, kotlin.Int, kotlin.Double, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-format/index.html"><span class="identifier">ColorFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createColorBuffer(kotlin.Int, kotlin.Int, kotlin.Double, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-type/index.html"><span class="identifier">ColorType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-color-buffer-from-file.html">createColorBufferFromFile</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createColorBufferFromFile</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createColorBufferFromFile(kotlin.String)/filename">filename</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-color-buffer-from-url.html">createColorBufferFromUrl</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createColorBufferFromUrl</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createColorBufferFromUrl(kotlin.String)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-cubemap.html">createCubemap</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createCubemap</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createCubemap(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createCubemap(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-format/index.html"><span class="identifier">ColorFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createCubemap(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-type/index.html"><span class="identifier">ColorType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-cubemap/index.html"><span class="identifier">Cubemap</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-cubemap-from-urls.html">createCubemapFromUrls</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createCubemapFromUrls</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createCubemapFromUrls(kotlin.collections.List((kotlin.String)))/urls">urls</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-cubemap/index.html"><span class="identifier">Cubemap</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-depth-buffer.html">createDepthBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createDepthBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createDepthBuffer(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createDepthBuffer(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createDepthBuffer(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-depth-format/index.html"><span class="identifier">DepthFormat</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-depth-buffer/index.html"><span class="identifier">DepthBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-draw-thread.html">createDrawThread</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createDrawThread</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-draw-thread/index.html"><span class="identifier">DrawThread</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-dynamic-index-buffer.html">createDynamicIndexBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createDynamicIndexBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createDynamicIndexBuffer(kotlin.Int, org.openrndr.draw.IndexType)/elementCount">elementCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createDynamicIndexBuffer(kotlin.Int, org.openrndr.draw.IndexType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-index-type/index.html"><span class="identifier">IndexType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-index-buffer/index.html"><span class="identifier">IndexBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-dynamic-vertex-buffer.html">createDynamicVertexBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createDynamicVertexBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createDynamicVertexBuffer(org.openrndr.draw.VertexFormat, kotlin.Int)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-vertex-format/index.html"><span class="identifier">VertexFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createDynamicVertexBuffer(org.openrndr.draw.VertexFormat, kotlin.Int)/vertexCount">vertexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-render-target.html">createRenderTarget</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createRenderTarget</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createRenderTarget(kotlin.Int, kotlin.Int, kotlin.Double)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createRenderTarget(kotlin.Int, kotlin.Int, kotlin.Double)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createRenderTarget(kotlin.Int, kotlin.Int, kotlin.Double)/contentScale">contentScale</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1.0<span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-render-target/index.html"><span class="identifier">RenderTarget</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-resource-thread.html">createResourceThread</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createResourceThread</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createResourceThread(kotlin.Function0((kotlin.Unit)))/f">f</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-resource-thread.html"><span class="identifier">ResourceThread</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-shade-style-manager.html">createShadeStyleManager</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createShadeStyleManager</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createShadeStyleManager(kotlin.Function1((org.openrndr.draw.ShadeStructure, kotlin.String)), kotlin.Function1((org.openrndr.draw.ShadeStructure, kotlin.String)))/vertexShaderGenerator">vertexShaderGenerator</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../org.openrndr.draw/-shade-structure/index.html"><span class="identifier">ShadeStructure</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createShadeStyleManager(kotlin.Function1((org.openrndr.draw.ShadeStructure, kotlin.String)), kotlin.Function1((org.openrndr.draw.ShadeStructure, kotlin.String)))/fragmentShaderGenerator">fragmentShaderGenerator</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../org.openrndr.draw/-shade-structure/index.html"><span class="identifier">ShadeStructure</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-shade-style-manager/index.html"><span class="identifier">ShadeStyleManager</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-shader.html">createShader</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createShader</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createShader(kotlin.String, kotlin.String)/vsCode">vsCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createShader(kotlin.String, kotlin.String)/fsCode">fsCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-shader/index.html"><span class="identifier">Shader</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="create-static-vertex-buffer.html">createStaticVertexBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createStaticVertexBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$createStaticVertexBuffer(org.openrndr.draw.VertexFormat, java.nio.Buffer)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-vertex-format/index.html"><span class="identifier">VertexFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$createStaticVertexBuffer(org.openrndr.draw.VertexFormat, java.nio.Buffer)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/nio/Buffer.html"><span class="identifier">Buffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="draw-indexed-instances.html">drawIndexedInstances</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">drawIndexedInstances</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedInstances(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/shader">shader</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-shader/index.html"><span class="identifier">Shader</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedInstances(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/indexBuffer">indexBuffer</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-index-buffer/index.html"><span class="identifier">IndexBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedInstances(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/vertexBuffers">vertexBuffers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.draw/-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedInstances(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/instanceAttributes">instanceAttributes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.draw/-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedInstances(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/drawPrimitive">drawPrimitive</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-draw-primitive/index.html"><span class="identifier">DrawPrimitive</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedInstances(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/indexOffset">indexOffset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedInstances(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/indexCount">indexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedInstances(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/instanceCount">instanceCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="draw-indexed-vertex-buffer.html">drawIndexedVertexBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">drawIndexedVertexBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedVertexBuffer(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/shader">shader</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-shader/index.html"><span class="identifier">Shader</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedVertexBuffer(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/indexBuffer">indexBuffer</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-index-buffer/index.html"><span class="identifier">IndexBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedVertexBuffer(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/vertexBuffers">vertexBuffers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.draw/-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedVertexBuffer(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/drawPrimitive">drawPrimitive</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-draw-primitive/index.html"><span class="identifier">DrawPrimitive</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedVertexBuffer(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/indexOffset">indexOffset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawIndexedVertexBuffer(org.openrndr.draw.Shader, org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/indexCount">indexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="draw-instances.html">drawInstances</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">drawInstances</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$drawInstances(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/shader">shader</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-shader/index.html"><span class="identifier">Shader</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawInstances(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/vertexBuffers">vertexBuffers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.draw/-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawInstances(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/instanceAttributes">instanceAttributes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.draw/-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawInstances(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/drawPrimitive">drawPrimitive</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-draw-primitive/index.html"><span class="identifier">DrawPrimitive</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawInstances(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/vertexOffset">vertexOffset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawInstances(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/vertexCount">vertexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawInstances(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/instanceCount">instanceCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="draw-vertex-buffer.html">drawVertexBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">drawVertexBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$drawVertexBuffer(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/shader">shader</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-shader/index.html"><span class="identifier">Shader</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawVertexBuffer(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/vertexBuffers">vertexBuffers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.draw/-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawVertexBuffer(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/drawPrimitive">drawPrimitive</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-draw-primitive/index.html"><span class="identifier">DrawPrimitive</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawVertexBuffer(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/vertexOffset">vertexOffset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.Driver$drawVertexBuffer(org.openrndr.draw.Shader, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/vertexCount">vertexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="finish.html">finish</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">finish</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>waits for all drawing to complete</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="internal-shader-resource.html">internalShaderResource</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">internalShaderResource</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$internalShaderResource(kotlin.String)/resourceId">resourceId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-state.html">setState</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setState</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.Driver$setState(org.openrndr.draw.DrawStyle)/drawStyle">drawStyle</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-draw-style/index.html"><span class="identifier">DrawStyle</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="driver.html">driver</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">driver</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Driver</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="instance.html">instance</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">instance</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Driver</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../org.openrndr.internal.gl3/-driver-g-l3/index.html">DriverGL3</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DriverGL3</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Driver</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

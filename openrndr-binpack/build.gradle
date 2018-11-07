@@ -1,4 +1,0 @@
-dependencies {
-    compile project(":openrndr-shape")
-    compile project(":openrndr-math")
-}

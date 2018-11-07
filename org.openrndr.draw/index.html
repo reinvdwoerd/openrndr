@@ -1,0 +1,562 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>org.openrndr.draw - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">openrndr</a>&nbsp;/&nbsp;<a href="./index.html">org.openrndr.draw</a><br/>
+<br/>
+<h2>Package org.openrndr.draw</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-blend-mode/index.html">BlendMode</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">BlendMode</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-buffer-texture/index.html">BufferTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">BufferTexture</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-buffer-texture-shadow/index.html">BufferTextureShadow</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">BufferTextureShadow</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-buffer-writer/index.html">BufferWriter</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">BufferWriter</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-channel-mask/index.html">ChannelMask</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ChannelMask</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-color-buffer/index.html">ColorBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">ColorBuffer</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-color-buffer-proxy/index.html">ColorBufferProxy</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ColorBufferProxy</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-color-buffer-shadow/index.html">ColorBufferShadow</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">ColorBufferShadow</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-color-format/index.html">ColorFormat</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ColorFormat</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-color-type/index.html">ColorType</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ColorType</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-cubemap/index.html">Cubemap</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Cubemap</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-cubemap-side/index.html">CubemapSide</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">CubemapSide</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-cull-test-pass/index.html">CullTestPass</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">CullTestPass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-depth-buffer/index.html">DepthBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">DepthBuffer</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-depth-format/index.html">DepthFormat</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">DepthFormat</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-depth-test-pass/index.html">DepthTestPass</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">DepthTestPass</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-draw-context/index.html">DrawContext</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DrawContext</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-draw-primitive/index.html">DrawPrimitive</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">DrawPrimitive</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-draw-quality/index.html">DrawQuality</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">DrawQuality</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-draw-style/index.html">DrawStyle</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DrawStyle</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-draw-thread/index.html">DrawThread</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">DrawThread</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-drawer/index.html">Drawer</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Drawer</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-file-format/index.html">FileFormat</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">FileFormat</span></code>
+<p>File format used while saving to file</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-filter/index.html">Filter</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Filter</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-font-image-map/index.html">FontImageMap</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">FontImageMap</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-font-map/index.html"><span class="identifier">FontMap</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-font-image-map-descriptor/index.html">FontImageMapDescriptor</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FontImageMapDescriptor</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-font-map/index.html">FontMap</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">FontMap</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-font-vector-map/index.html">FontVectorMap</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">FontVectorMap</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-font-map/index.html"><span class="identifier">FontMap</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-glyph-metrics/index.html">GlyphMetrics</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GlyphMetrics</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-index-buffer/index.html">IndexBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">IndexBuffer</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-index-type/index.html">IndexType</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">IndexType</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-line-cap/index.html">LineCap</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">LineCap</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-line-join/index.html">LineJoin</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">LineJoin</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-magnifying-filter/index.html">MagnifyingFilter</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">MagnifyingFilter</span></code>
+<p>Texture filters for magnification</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-minifying-filter/index.html">MinifyingFilter</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">MinifyingFilter</span></code>
+<p>Texture filters used for minification</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-program-render-target/index.html">ProgramRenderTarget</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">ProgramRenderTarget</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-render-target/index.html"><span class="identifier">RenderTarget</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-render-target/index.html">RenderTarget</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">RenderTarget</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-render-target-builder/index.html">RenderTargetBuilder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RenderTargetBuilder</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-shade-structure/index.html">ShadeStructure</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ShadeStructure</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-shade-style/index.html">ShadeStyle</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ShadeStyle</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-shade-style-manager/index.html">ShadeStyleManager</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ShadeStyleManager</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-shader/index.html">Shader</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Shader</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-shader-watcher/index.html">ShaderWatcher</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ShaderWatcher</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-shader-watcher-builder/index.html">ShaderWatcherBuilder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ShaderWatcherBuilder</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-stencil-operation/index.html">StencilOperation</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">StencilOperation</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-stencil-style/index.html">StencilStyle</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">StencilStyle</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-stencil-test/index.html">StencilTest</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">StencilTest</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-uniform-block/index.html">UniformBlock</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">UniformBlock</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-uniform-block-layout/index.html">UniformBlockLayout</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">UniformBlockLayout</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-uniform-description/index.html">UniformDescription</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">UniformDescription</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-uniform-type/index.html">UniformType</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">UniformType</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-vertex-buffer/index.html">VertexBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">VertexBuffer</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-vertex-buffer-shadow/index.html">VertexBufferShadow</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">VertexBufferShadow</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-vertex-element/index.html">VertexElement</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">VertexElement</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-vertex-element-type/index.html">VertexElementType</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">VertexElementType</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-vertex-format/index.html">VertexFormat</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">VertexFormat</span></code>
+<p>VertexBuffer Layout describes how data is organized in the VertexBuffer</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-wrap-mode/index.html">WrapMode</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">WrapMode</span></code>
+<p>Texture wrapping mode</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="invert.html">invert</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">invert</span><span class="symbol">: </span><a href="../org.openrndr.math/-matrix55/index.html"><span class="identifier">Matrix55</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="code-from-stream.html">codeFromStream</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">codeFromStream</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$codeFromStream(java.io.InputStream)/stream">stream</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html"><span class="identifier">InputStream</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="code-from-u-r-l.html">codeFromURL</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">codeFromURL</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$codeFromURL(java.net.URL)/url">url</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">codeFromURL</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$codeFromURL(kotlin.String)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="color-buffer.html">colorBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">colorBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$colorBuffer(kotlin.Int, kotlin.Int, kotlin.Double, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$colorBuffer(kotlin.Int, kotlin.Int, kotlin.Double, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$colorBuffer(kotlin.Int, kotlin.Int, kotlin.Double, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/contentScale">contentScale</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$colorBuffer(kotlin.Int, kotlin.Int, kotlin.Double, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorFormat.RGBa<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$colorBuffer(kotlin.Int, kotlin.Int, kotlin.Double, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorType.UINT8<span class="symbol">)</span><span class="symbol">: </span><a href="-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="cubemap.html">cubemap</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">cubemap</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$cubemap(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$cubemap(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorFormat.RGBa<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$cubemap(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorType.UINT8<span class="symbol">)</span><span class="symbol">: </span><a href="-cubemap/index.html"><span class="identifier">Cubemap</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="grayscale.html">grayscale</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">grayscale</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$grayscale(kotlin.Double, kotlin.Double, kotlin.Double)/r">r</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.33<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$grayscale(kotlin.Double, kotlin.Double, kotlin.Double)/g">g</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.33<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$grayscale(kotlin.Double, kotlin.Double, kotlin.Double)/b">b</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.33<span class="symbol">)</span><span class="symbol">: </span><a href="../org.openrndr.math/-matrix55/index.html"><span class="identifier">Matrix55</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="index-buffer.html">indexBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">indexBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$indexBuffer(kotlin.Int, org.openrndr.draw.IndexType)/elementCount">elementCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$indexBuffer(kotlin.Int, org.openrndr.draw.IndexType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="-index-type/index.html"><span class="identifier">IndexType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-index-buffer/index.html"><span class="identifier">IndexBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="isolated.html">isolated</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">.</span><span class="identifier">isolated</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$isolated(org.openrndr.draw.Drawer, kotlin.Function1((org.openrndr.draw.Drawer, kotlin.Unit)))/function">function</span><span class="symbol">:</span>&nbsp;<a href="-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Pushes style, view- and projection matrix, calls function and pops.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="isolated-with-target.html">isolatedWithTarget</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">.</span><span class="identifier">isolatedWithTarget</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$isolatedWithTarget(org.openrndr.draw.Drawer, org.openrndr.draw.RenderTarget, kotlin.Function1((org.openrndr.draw.Drawer, kotlin.Unit)))/target">target</span><span class="symbol">:</span>&nbsp;<a href="-render-target/index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$isolatedWithTarget(org.openrndr.draw.Drawer, org.openrndr.draw.RenderTarget, kotlin.Function1((org.openrndr.draw.Drawer, kotlin.Unit)))/function">function</span><span class="symbol">:</span>&nbsp;<a href="-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Pushes style, view- and projection matrix, sets render target, calls function and pops,</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="launch.html">launch</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="-draw-thread/index.html"><span class="identifier">DrawThread</span></a><span class="symbol">.</span><span class="identifier">launch</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$launch(org.openrndr.draw.DrawThread, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.dispatcher<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$launch(org.openrndr.draw.DrawThread, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/start">start</span><span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineStart</span>&nbsp;<span class="symbol">=</span>&nbsp;CoroutineStart.DEFAULT<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$launch(org.openrndr.draw.DrawThread, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">CoroutineScope</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="load-image.html">loadImage</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">loadImage</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$loadImage(kotlin.String)/fileOrUrl">fileOrUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">loadImage</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$loadImage(java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">loadImage</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$loadImage(java.net.URL)/url">url</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="render-target.html">renderTarget</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">renderTarget</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$renderTarget(kotlin.Int, kotlin.Int, kotlin.Double, kotlin.Function1((org.openrndr.draw.RenderTargetBuilder, kotlin.Unit)))/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$renderTarget(kotlin.Int, kotlin.Int, kotlin.Double, kotlin.Function1((org.openrndr.draw.RenderTargetBuilder, kotlin.Unit)))/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$renderTarget(kotlin.Int, kotlin.Int, kotlin.Double, kotlin.Function1((org.openrndr.draw.RenderTargetBuilder, kotlin.Unit)))/contentScale">contentScale</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$renderTarget(kotlin.Int, kotlin.Int, kotlin.Double, kotlin.Function1((org.openrndr.draw.RenderTargetBuilder, kotlin.Unit)))/builder">builder</span><span class="symbol">:</span>&nbsp;<a href="-render-target-builder/index.html"><span class="identifier">RenderTargetBuilder</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-render-target/index.html"><span class="identifier">RenderTarget</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="shade-style.html">shadeStyle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">shadeStyle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$shadeStyle(kotlin.Function1((org.openrndr.draw.ShadeStyle, kotlin.Unit)))/builder">builder</span><span class="symbol">:</span>&nbsp;<a href="-shade-style/index.html"><span class="identifier">ShadeStyle</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-shade-style/index.html"><span class="identifier">ShadeStyle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="shader-watcher.html">shaderWatcher</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">shaderWatcher</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$shaderWatcher(kotlin.Function1((org.openrndr.draw.ShaderWatcherBuilder, kotlin.Unit)))/init">init</span><span class="symbol">:</span>&nbsp;<a href="-shader-watcher-builder/index.html"><span class="identifier">ShaderWatcherBuilder</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-shader-watcher/index.html"><span class="identifier">ShaderWatcher</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="tint.html">tint</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">tint</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$tint(org.openrndr.color.ColorRGBa)/color">color</span><span class="symbol">:</span>&nbsp;<a href="../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../org.openrndr.math/-matrix55/index.html"><span class="identifier">Matrix55</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="vertex-buffer.html">vertexBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">vertexBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$vertexBuffer(org.openrndr.draw.VertexFormat, kotlin.Int)/vertexFormat">vertexFormat</span><span class="symbol">:</span>&nbsp;<a href="-vertex-format/index.html"><span class="identifier">VertexFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$vertexBuffer(org.openrndr.draw.VertexFormat, kotlin.Int)/vertexCount">vertexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="vertex-format.html">vertexFormat</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">vertexFormat</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$vertexFormat(kotlin.Function1((org.openrndr.draw.VertexFormat, kotlin.Unit)))/builder">builder</span><span class="symbol">:</span>&nbsp;<a href="-vertex-format/index.html"><span class="identifier">VertexFormat</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-vertex-format/index.html"><span class="identifier">VertexFormat</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

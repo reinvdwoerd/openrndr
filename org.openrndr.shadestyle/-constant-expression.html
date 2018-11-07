@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ConstantExpression - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">openrndr</a>&nbsp;/&nbsp;<a href="index.html">org.openrndr.shadestyle</a>&nbsp;/&nbsp;<a href="./-constant-expression.html">ConstantExpression</a><br/>
+<br/>
+<h1>ConstantExpression</h1>
+<code><span class="keyword">interface </span><span class="identifier">ConstantExpression</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-primary-expression.html"><span class="identifier">PrimaryExpression</span></a></code>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="is-before.html">isBefore</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="-node/index.html"><span class="identifier">Node</span></a><span class="symbol">.</span><span class="identifier">isBefore</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shadestyle$isBefore(org.openrndr.shadestyle.Node, org.openrndr.shadestyle.Node)/other">other</span><span class="symbol">:</span>&nbsp;<a href="-node/index.html"><span class="identifier">Node</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="process.html">process</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="-node/index.html"><span class="identifier">Node</span></a><span class="symbol">.</span><span class="identifier">process</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shadestyle$process(org.openrndr.shadestyle.Node, kotlin.Function1((org.openrndr.shadestyle.Node, kotlin.Unit)))/operation">operation</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="-node/index.html"><span class="identifier">Node</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="specific-process.html">specificProcess</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-node/index.html"><span class="identifier">Node</span></a><span class="symbol">&gt;</span> <a href="-node/index.html"><span class="identifier">Node</span></a><span class="symbol">.</span><span class="identifier">specificProcess</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shadestyle$specificProcess(org.openrndr.shadestyle.Node, java.lang.Class((org.openrndr.shadestyle.specificProcess.T)), kotlin.Function1((org.openrndr.shadestyle.specificProcess.T, kotlin.Unit)))/klass">klass</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><a href="specific-process.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.shadestyle$specificProcess(org.openrndr.shadestyle.Node, java.lang.Class((org.openrndr.shadestyle.specificProcess.T)), kotlin.Function1((org.openrndr.shadestyle.specificProcess.T, kotlin.Unit)))/operation">operation</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="specific-process.html#T"><span class="identifier">T</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="transform.html">transform</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="-node/index.html"><span class="identifier">Node</span></a><span class="symbol">.</span><span class="identifier">transform</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shadestyle$transform(org.openrndr.shadestyle.Node, kotlin.Function1((org.openrndr.shadestyle.Node, )))/operation">operation</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="-node/index.html"><span class="identifier">Node</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="-node/index.html"><span class="identifier">Node</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-node/index.html"><span class="identifier">Node</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-boolean-constant/index.html">BooleanConstant</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">BooleanConstant</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-constant-expression.html"><span class="identifier">ConstantExpression</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-float-constant/index.html">FloatConstant</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">FloatConstant</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-constant-expression.html"><span class="identifier">ConstantExpression</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-integer-constant/index.html">IntegerConstant</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">IntegerConstant</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./-constant-expression.html"><span class="identifier">ConstantExpression</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

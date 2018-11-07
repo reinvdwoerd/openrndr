@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>VertexBufferGL3 - openrndr</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.internal.gl3</a>&nbsp;/&nbsp;<a href="./index.html">VertexBufferGL3</a><br/>
+<br/>
+<h1>VertexBufferGL3</h1>
+<code><span class="keyword">class </span><span class="identifier">VertexBufferGL3</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">VertexBufferGL3</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.VertexBufferGL3$<init>(kotlin.Int, org.openrndr.draw.VertexFormat, kotlin.Int)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.VertexBufferGL3$<init>(kotlin.Int, org.openrndr.draw.VertexFormat, kotlin.Int)/vertexFormat">vertexFormat</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-vertex-format/index.html"><span class="identifier">VertexFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.VertexBufferGL3$<init>(kotlin.Int, org.openrndr.draw.VertexFormat, kotlin.Int)/vertexCount">vertexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="buffer.html">buffer</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">buffer</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="shadow.html">shadow</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">shadow</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-vertex-buffer-shadow/index.html"><span class="identifier">VertexBufferShadow</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="vertex-count.html">vertexCount</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">vertexCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="vertex-format.html">vertexFormat</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">vertexFormat</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-vertex-format/index.html"><span class="identifier">VertexFormat</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="bind.html">bind</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="destroy.html">destroy</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">destroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="read.html">read</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">read</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.VertexBufferGL3$read(java.nio.ByteBuffer, kotlin.Int)/data">data</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.VertexBufferGL3$read(java.nio.ByteBuffer, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="unbind.html">unbind</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">unbind</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write.html">write</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.VertexBufferGL3$write(java.nio.ByteBuffer, kotlin.Int)/data">data</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.VertexBufferGL3$write(java.nio.ByteBuffer, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../org.openrndr.draw/-vertex-buffer/put.html">put</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">put</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.VertexBuffer$put(kotlin.Function1((org.openrndr.draw.BufferWriter, kotlin.Unit)))/putter">putter</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-buffer-writer/index.html"><span class="identifier">BufferWriter</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-dynamic.html">createDynamic</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createDynamic</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.VertexBufferGL3.Companion$createDynamic(org.openrndr.draw.VertexFormat, kotlin.Int)/vertexFormat">vertexFormat</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-vertex-format/index.html"><span class="identifier">VertexFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.VertexBufferGL3.Companion$createDynamic(org.openrndr.draw.VertexFormat, kotlin.Int)/vertexCount">vertexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">VertexBufferGL3</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,532 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Drawer - openrndr</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">Drawer</a><br/>
+<br/>
+<h1>Drawer</h1>
+<code><span class="keyword">class </span><span class="identifier">Drawer</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Drawer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$<init>(org.openrndr.internal.Driver)/driver">driver</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.internal/-driver/index.html"><span class="identifier">Driver</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="bounds.html">bounds</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">bounds</span><span class="symbol">: </span><a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="context.html">context</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">context</span><span class="symbol">: </span><a href="../-draw-context/index.html"><span class="identifier">DrawContext</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="cull-test-pass.html">cullTestPass</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">cullTestPass</span><span class="symbol">: </span><a href="../-cull-test-pass/index.html"><span class="identifier">CullTestPass</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="depth-test-pass.html">depthTestPass</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">depthTestPass</span><span class="symbol">: </span><a href="../-depth-test-pass/index.html"><span class="identifier">DepthTestPass</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="depth-write.html">depthWrite</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">depthWrite</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="draw-style.html">drawStyle</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">drawStyle</span><span class="symbol">: </span><a href="../-draw-style/index.html"><span class="identifier">DrawStyle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="driver.html">driver</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">driver</span><span class="symbol">: </span><a href="../../org.openrndr.internal/-driver/index.html"><span class="identifier">Driver</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="fill.html">fill</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">fill</span><span class="symbol">: </span><a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="font-map.html">fontMap</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">fontMap</span><span class="symbol">: </span><a href="../-font-map/index.html"><span class="identifier">FontMap</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="height.html">height</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="line-cap.html">lineCap</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">lineCap</span><span class="symbol">: </span><a href="../-line-cap/index.html"><span class="identifier">LineCap</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="line-join.html">lineJoin</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">lineJoin</span><span class="symbol">: </span><a href="../-line-join/index.html"><span class="identifier">LineJoin</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="model.html">model</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">model</span><span class="symbol">: </span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="model-stack.html">modelStack</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">modelStack</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/6/docs/api/java/util/Stack.html"><span class="identifier">Stack</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="projection.html">projection</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">projection</span><span class="symbol">: </span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="projection-stack.html">projectionStack</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">projectionStack</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/6/docs/api/java/util/Stack.html"><span class="identifier">Stack</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="shade-style.html">shadeStyle</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">shadeStyle</span><span class="symbol">: </span><a href="../-shade-style/index.html"><span class="identifier">ShadeStyle</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="stroke.html">stroke</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">stroke</span><span class="symbol">: </span><a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="stroke-weight.html">strokeWeight</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">strokeWeight</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="view.html">view</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">view</span><span class="symbol">: </span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="view-stack.html">viewStack</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">viewStack</span><span class="symbol">: </span><a href="http://docs.oracle.com/javase/6/docs/api/java/util/Stack.html"><span class="identifier">Stack</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="width.html">width</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="background.html">background</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">background</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$background(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/r">r</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$background(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/g">g</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$background(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/b">b</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$background(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/a">a</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">background</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$background(org.openrndr.color.ColorRGBa)/color">color</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="circle.html">circle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">circle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$circle(kotlin.Double, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$circle(kotlin.Double, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$circle(kotlin.Double, kotlin.Double, kotlin.Double)/radius">radius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">circle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$circle(org.openrndr.math.Vector2, kotlin.Double)/position">position</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$circle(org.openrndr.math.Vector2, kotlin.Double)/radius">radius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">circle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$circle(org.openrndr.shape.Circle)/circle">circle</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-circle/index.html"><span class="identifier">Circle</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="circles.html">circles</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">circles</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$circles(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.Double)/positions">positions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$circles(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.Double)/radius">radius</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">circles</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$circles(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.collections.List((kotlin.Double)))/positions">positions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$circles(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.collections.List((kotlin.Double)))/radii">radii</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">circles</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$circles(kotlin.collections.List((org.openrndr.shape.Circle)))/circles">circles</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.shape/-circle/index.html"><span class="identifier">Circle</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="composition.html">composition</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">composition</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$composition(org.openrndr.shape.Composition)/composition">composition</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-composition/index.html"><span class="identifier">Composition</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="contour.html">contour</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">contour</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$contour(org.openrndr.shape.ShapeContour)/contour">contour</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="contours.html">contours</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">contours</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$contours(kotlin.collections.List((org.openrndr.shape.ShapeContour)))/contours">contours</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.shape/-shape-contour/index.html"><span class="identifier">ShapeContour</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="image.html">image</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">image</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, org.openrndr.shape.Rectangle, org.openrndr.shape.Rectangle)/colorBuffer">colorBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, org.openrndr.shape.Rectangle, org.openrndr.shape.Rectangle)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, org.openrndr.shape.Rectangle, org.openrndr.shape.Rectangle)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">image</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/colorBuffer">colorBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;colorBuffer.width.toDouble()<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;colorBuffer.height.toDouble()<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">image</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/colorBuffer">colorBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/position">position</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;colorBuffer.width.toDouble()<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;colorBuffer.height.toDouble()<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">image</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer)/colorBuffer">colorBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">image</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, kotlin.collections.List((kotlin.Pair((org.openrndr.shape.Rectangle, )))))/colorBuffer">colorBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$image(org.openrndr.draw.ColorBuffer, kotlin.collections.List((kotlin.Pair((org.openrndr.shape.Rectangle, )))))/rectangles">rectangles</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a><span class="symbol">,</span>&nbsp;<a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="line-loop.html">lineLoop</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">lineLoop</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineLoop(kotlin.collections.List((org.openrndr.math.Vector2)))/points">points</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="line-loops.html">lineLoops</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">lineLoops</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineLoops(kotlin.collections.List((kotlin.collections.List((org.openrndr.math.Vector2)))))/loops">loops</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">lineLoops</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineLoops(kotlin.collections.List((kotlin.collections.List((org.openrndr.math.Vector2)))), kotlin.collections.List((kotlin.Double)))/loops">loops</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$lineLoops(kotlin.collections.List((kotlin.collections.List((org.openrndr.math.Vector2)))), kotlin.collections.List((kotlin.Double)))/weights">weights</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="line-segment.html">lineSegment</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">lineSegment</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegment(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/x0">x0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegment(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/y0">y0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegment(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/x1">x1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegment(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/y1">y1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">lineSegment</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegment(org.openrndr.shape.LineSegment)/lineSegment">lineSegment</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-line-segment/index.html"><span class="identifier">LineSegment</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">lineSegment</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegment(org.openrndr.math.Vector2, org.openrndr.math.Vector2)/start">start</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegment(org.openrndr.math.Vector2, org.openrndr.math.Vector2)/end">end</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">lineSegment</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegment(org.openrndr.math.Vector3, org.openrndr.math.Vector3)/start">start</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegment(org.openrndr.math.Vector3, org.openrndr.math.Vector3)/end">end</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="line-segments.html">lineSegments</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">lineSegments</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegments(kotlin.collections.List((org.openrndr.math.Vector2)))/segments">segments</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">lineSegments</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegments(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.collections.List((kotlin.Double)))/segments">segments</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegments(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.collections.List((kotlin.Double)))/weights">weights</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="line-segments3d.html">lineSegments3d</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">lineSegments3d</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineSegments3d(kotlin.collections.List((org.openrndr.math.Vector3)))/segments">segments</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="line-strip.html">lineStrip</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">lineStrip</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineStrip(kotlin.collections.List((org.openrndr.math.Vector2)))/points">points</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="line-strips.html">lineStrips</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">lineStrips</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineStrips(kotlin.collections.List((kotlin.collections.List((org.openrndr.math.Vector2)))))/strips">strips</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">lineStrips</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lineStrips(kotlin.collections.List((kotlin.collections.List((org.openrndr.math.Vector2)))), kotlin.collections.List((kotlin.Double)))/strips">strips</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$lineStrips(kotlin.collections.List((kotlin.collections.List((org.openrndr.math.Vector2)))), kotlin.collections.List((kotlin.Double)))/weights">weights</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="look-at.html">lookAt</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">lookAt</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$lookAt(org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3)/from">from</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$lookAt(org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3)/to">to</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$lookAt(org.openrndr.math.Vector3, org.openrndr.math.Vector3, org.openrndr.math.Vector3)/up">up</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Vector3.UNIT_Y<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="ortho.html">ortho</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">ortho</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(org.openrndr.draw.RenderTarget)/renderTarget">renderTarget</span><span class="symbol">:</span>&nbsp;<a href="../-render-target/index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">ortho</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">ortho</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/left">left</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/right">right</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/bottom">bottom</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/top">top</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/near">near</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$ortho(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/far">far</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="perspective.html">perspective</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">perspective</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$perspective(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/fovY">fovY</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$perspective(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/aspectRatio">aspectRatio</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$perspective(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/zNear">zNear</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$perspective(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/zFar">zFar</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets the projection to a perspective projection matrix</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="pop-model.html">popModel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">popModel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="pop-projection.html">popProjection</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">popProjection</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="pop-style.html">popStyle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">popStyle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="pop-transforms.html">popTransforms</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">popTransforms</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="pop-view.html">popView</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">popView</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="push-model.html">pushModel</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">pushModel</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="push-projection.html">pushProjection</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">pushProjection</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="push-style.html">pushStyle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">pushStyle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-draw-style/index.html"><span class="identifier">DrawStyle</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="push-transforms.html">pushTransforms</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">pushTransforms</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="push-view.html">pushView</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">pushView</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.math/-matrix44/index.html"><span class="identifier">Matrix44</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="rectangle.html">rectangle</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">rectangle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$rectangle(org.openrndr.shape.Rectangle)/rectangle">rectangle</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">rectangle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$rectangle(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$rectangle(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$rectangle(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$rectangle(kotlin.Double, kotlin.Double, kotlin.Double, kotlin.Double)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">rectangle</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$rectangle(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/corner">corner</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$rectangle(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$rectangle(org.openrndr.math.Vector2, kotlin.Double, kotlin.Double)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="rectangles.html">rectangles</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">rectangles</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$rectangles(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.Double, kotlin.Double)/positions">positions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$rectangles(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.Double, kotlin.Double)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$rectangles(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.Double, kotlin.Double)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">rectangles</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$rectangles(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.collections.List((org.openrndr.math.Vector2)))/positions">positions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$rectangles(kotlin.collections.List((org.openrndr.math.Vector2)), kotlin.collections.List((org.openrndr.math.Vector2)))/dimensions">dimensions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">rectangles</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$rectangles(kotlin.collections.List((org.openrndr.shape.Rectangle)))/rectangles">rectangles</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="reset.html">reset</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">reset</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="rotate.html">rotate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">rotate</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$rotate(kotlin.Double)/rotationInDegrees">rotationInDegrees</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">rotate</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$rotate(org.openrndr.math.Vector3, kotlin.Double)/axis">axis</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$rotate(org.openrndr.math.Vector3, kotlin.Double)/rotationInDegrees">rotationInDegrees</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="scale.html">scale</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">scale</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$scale(kotlin.Double)/s">s</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">scale</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$scale(kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$scale(kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">scale</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$scale(kotlin.Double, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$scale(kotlin.Double, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$scale(kotlin.Double, kotlin.Double, kotlin.Double)/z">z</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="shape.html">shape</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">shape</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$shape(org.openrndr.shape.Shape)/shape">shape</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.shape/-shape/index.html"><span class="identifier">Shape</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="shapes.html">shapes</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">shapes</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$shapes(kotlin.collections.List((org.openrndr.shape.Shape)))/shapes">shapes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.shape/-shape/index.html"><span class="identifier">Shape</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="size.html">size</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">size</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$size(kotlin.Int, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$size(kotlin.Int, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="text.html">text</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">text</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$text(kotlin.String, org.openrndr.math.Vector2)/text">text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$text(kotlin.String, org.openrndr.math.Vector2)/position">position</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">text</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$text(kotlin.String, kotlin.Double, kotlin.Double)/text">text</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$text(kotlin.String, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$text(kotlin.String, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.0<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="texts.html">texts</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">texts</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$texts(kotlin.collections.List((kotlin.String)), kotlin.collections.List((org.openrndr.math.Vector2)))/texts">texts</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$texts(kotlin.collections.List((kotlin.String)), kotlin.collections.List((org.openrndr.math.Vector2)))/positions">positions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="translate.html">translate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">translate</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$translate(org.openrndr.math.Vector2)/t">t</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector2/index.html"><span class="identifier">Vector2</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">translate</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$translate(org.openrndr.math.Vector3)/t">t</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">translate</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$translate(kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$translate(kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">translate</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$translate(kotlin.Double, kotlin.Double, kotlin.Double)/x">x</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$translate(kotlin.Double, kotlin.Double, kotlin.Double)/y">y</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$translate(kotlin.Double, kotlin.Double, kotlin.Double)/z">z</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="vertex-buffer.html">vertexBuffer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">vertexBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(org.openrndr.draw.VertexBuffer, org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/vertexBuffer">vertexBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(org.openrndr.draw.VertexBuffer, org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/primitive">primitive</span><span class="symbol">:</span>&nbsp;<a href="../-draw-primitive/index.html"><span class="identifier">DrawPrimitive</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(org.openrndr.draw.VertexBuffer, org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/vertexOffset">vertexOffset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(org.openrndr.draw.VertexBuffer, org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/vertexCount">vertexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;vertexBuffer.vertexCount<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">vertexBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/vertexBuffers">vertexBuffers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/primitive">primitive</span><span class="symbol">:</span>&nbsp;<a href="../-draw-primitive/index.html"><span class="identifier">DrawPrimitive</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/vertexCount">vertexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;vertexBuffers[0].vertexCount<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">vertexBuffer</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/indexBuffer">indexBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-index-buffer/index.html"><span class="identifier">IndexBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/vertexBuffers">vertexBuffers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/primitive">primitive</span><span class="symbol">:</span>&nbsp;<a href="../-draw-primitive/index.html"><span class="identifier">DrawPrimitive</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBuffer(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int)/indexCount">indexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;indexBuffer.indexCount<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="vertex-buffer-instances.html">vertexBufferInstances</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">vertexBufferInstances</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/vertexBuffers">vertexBuffers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/instanceAttributes">instanceAttributes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/primitive">primitive</span><span class="symbol">:</span>&nbsp;<a href="../-draw-primitive/index.html"><span class="identifier">DrawPrimitive</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/instanceCount">instanceCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/vertexCount">vertexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;vertexBuffers[0].vertexCount<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">vertexBufferInstances</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/indexBuffer">indexBuffer</span><span class="symbol">:</span>&nbsp;<a href="../-index-buffer/index.html"><span class="identifier">IndexBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/vertexBuffers">vertexBuffers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/instanceAttributes">instanceAttributes</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-vertex-buffer/index.html"><span class="identifier">VertexBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/primitive">primitive</span><span class="symbol">:</span>&nbsp;<a href="../-draw-primitive/index.html"><span class="identifier">DrawPrimitive</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/instanceCount">instanceCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/offset">offset</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$vertexBufferInstances(org.openrndr.draw.IndexBuffer, kotlin.collections.List((org.openrndr.draw.VertexBuffer)), kotlin.collections.List((org.openrndr.draw.VertexBuffer)), org.openrndr.draw.DrawPrimitive, kotlin.Int, kotlin.Int, kotlin.Int)/indexCount">indexCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;indexBuffer.indexCount<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="with-target.html">withTarget</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">withTarget</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Drawer$withTarget(org.openrndr.draw.RenderTarget, kotlin.Function1((org.openrndr.draw.Drawer, kotlin.Unit)))/target">target</span><span class="symbol">:</span>&nbsp;<a href="../-render-target/index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Drawer$withTarget(org.openrndr.draw.RenderTarget, kotlin.Function1((org.openrndr.draw.Drawer, kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Drawer</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../isolated.html">isolated</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">Drawer</span></a><span class="symbol">.</span><span class="identifier">isolated</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$isolated(org.openrndr.draw.Drawer, kotlin.Function1((org.openrndr.draw.Drawer, kotlin.Unit)))/function">function</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Drawer</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Pushes style, view- and projection matrix, calls function and pops.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../isolated-with-target.html">isolatedWithTarget</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="./index.html"><span class="identifier">Drawer</span></a><span class="symbol">.</span><span class="identifier">isolatedWithTarget</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$isolatedWithTarget(org.openrndr.draw.Drawer, org.openrndr.draw.RenderTarget, kotlin.Function1((org.openrndr.draw.Drawer, kotlin.Unit)))/target">target</span><span class="symbol">:</span>&nbsp;<a href="../-render-target/index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$isolatedWithTarget(org.openrndr.draw.Drawer, org.openrndr.draw.RenderTarget, kotlin.Function1((org.openrndr.draw.Drawer, kotlin.Unit)))/function">function</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Drawer</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Pushes style, view- and projection matrix, sets render target, calls function and pops,</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
