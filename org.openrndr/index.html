@@ -8,6 +8,7 @@
 <a href="../index.html">openrndr</a>&nbsp;/&nbsp;<a href="./index.html">org.openrndr</a><br/>
 <br/>
 <h2>Package org.openrndr</h2>
+<p>the core of OPENRNDR</p>
 <h3>Types</h3>
 <table>
 <tbody>
@@ -16,7 +17,16 @@
 <p><a href="-application/index.html">Application</a></p>
 </td>
 <td>
-<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Application</span></code></td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Application</span></code>
+<p>Application interface</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-application-builder/index.html">ApplicationBuilder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ApplicationBuilder</span></code></td>
 </tr>
 <tr>
 <td>
@@ -90,7 +100,9 @@
 <p><a href="-presentation-mode/index.html">PresentationMode</a></p>
 </td>
 <td>
-<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">PresentationMode</span></code></td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">PresentationMode</span></code>
+<p>PresentationMode describes modes of frame presentation</p>
+</td>
 </tr>
 <tr>
 <td>
@@ -128,6 +140,13 @@
 </td>
 <td>
 <code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">WindowEventType</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-window-multisample/index.html">WindowMultisample</a></p>
+</td>
+<td>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">WindowMultisample</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -361,7 +380,12 @@
 <p><a href="application.html">application</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">application</span><span class="symbol">(</span><span class="identifier" id="org.openrndr$application(org.openrndr.Program, org.openrndr.Configuration)/program">program</span><span class="symbol">:</span>&nbsp;<a href="-program/index.html"><span class="identifier">Program</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr$application(org.openrndr.Program, org.openrndr.Configuration)/configuration">configuration</span><span class="symbol">:</span>&nbsp;<a href="-configuration/index.html"><span class="identifier">Configuration</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Configuration()<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">application</span><span class="symbol">(</span><span class="identifier" id="org.openrndr$application(org.openrndr.Program, org.openrndr.Configuration)/program">program</span><span class="symbol">:</span>&nbsp;<a href="-program/index.html"><span class="identifier">Program</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr$application(org.openrndr.Program, org.openrndr.Configuration)/configuration">configuration</span><span class="symbol">:</span>&nbsp;<a href="-configuration/index.html"><span class="identifier">Configuration</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Configuration()<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Runs <a href="application.html#org.openrndr$application(org.openrndr.Program, org.openrndr.Configuration)/program">program</a> as an application using <a href="application.html#org.openrndr$application(org.openrndr.Program, org.openrndr.Configuration)/configuration">configuration</a>.</p>
+<code><span class="keyword">fun </span><span class="identifier">application</span><span class="symbol">(</span><span class="identifier" id="org.openrndr$application(kotlin.Function1((org.openrndr.ApplicationBuilder, kotlin.Unit)))/build">build</span><span class="symbol">:</span>&nbsp;<a href="-application-builder/index.html"><span class="identifier">ApplicationBuilder</span></a><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Runs <a href="#">programFunction</a> as an application using <a href="configuration.html">configuration</a>, this provides a more functional flavored way of
+writing applications.</p>
+</td>
 </tr>
 <tr>
 <td>
@@ -384,7 +408,9 @@
 <p><a href="resource-url.html">resourceUrl</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">resourceUrl</span><span class="symbol">(</span><span class="identifier" id="org.openrndr$resourceUrl(kotlin.String, java.lang.Class((kotlin.Any)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr$resourceUrl(kotlin.String, java.lang.Class((kotlin.Any)))/class">class</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;Application::class.java<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">resourceUrl</span><span class="symbol">(</span><span class="identifier" id="org.openrndr$resourceUrl(kotlin.String, java.lang.Class((kotlin.Any)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr$resourceUrl(kotlin.String, java.lang.Class((kotlin.Any)))/class">class</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;Application::class.java<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Resolves resource named <a href="resource-url.html#org.openrndr$resourceUrl(kotlin.String, java.lang.Class((kotlin.Any)))/name">name</a> relative to <a href="resource-url.html#org.openrndr$resourceUrl(kotlin.String, java.lang.Class((kotlin.Any)))/class">class</a> as a <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a> based URL.</p>
+</td>
 </tr>
 </tbody>
 </table>

@@ -92,6 +92,15 @@
 </tr>
 <tr>
 <td>
+<p><a href="clock.html">clock</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">clock</span><span class="symbol">: </span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code>
+<p>clock function. defaults to returning the application time.</p>
+</td>
+</tr>
+<tr>
+<td>
 <p><a href="dispatcher.html">dispatcher</a></p>
 </td>
 <td>
@@ -138,7 +147,8 @@
 </td>
 <td>
 <code><span class="keyword">val </span><span class="identifier">seconds</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code>
-<p>The number of <a href="seconds.html">seconds</a> since program start</p>
+<p>The number of <a href="seconds.html">seconds</a> since program start, or the time from a custom <a href="clock.html">clock</a>.
+value is updated at the beginning of the frame only.</p>
 </td>
 </tr>
 <tr>

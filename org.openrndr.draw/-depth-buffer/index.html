@@ -35,6 +35,13 @@
 </tr>
 <tr>
 <td>
+<p><a href="multisample.html">multisample</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">multisample</span><span class="symbol">: </span><a href="../-buffer-multisample/index.html"><span class="identifier">BufferMultisample</span></a></code></td>
+</tr>
+<tr>
+<td>
 <p><a href="width.html">width</a></p>
 </td>
 <td>
@@ -59,6 +66,13 @@
 <td>
 <code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">destroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
+<tr>
+<td>
+<p><a href="resolve-to.html">resolveTo</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">resolveTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.DepthBuffer$resolveTo(org.openrndr.draw.DepthBuffer)/target">target</span><span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DepthBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
 </tbody>
 </table>
 <h3>Companion Object Functions</h3>
@@ -69,7 +83,7 @@
 <p><a href="create.html">create</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.DepthBuffer.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DepthBuffer.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DepthBuffer.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../-depth-format/index.html"><span class="identifier">DepthFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;DepthFormat.DEPTH24_STENCIL8<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">DepthBuffer</span></a></code></td>
+<code><span class="keyword">fun </span><s><span class="identifier">create</span></s><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.DepthBuffer.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DepthBuffer.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DepthBuffer.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../-depth-format/index.html"><span class="identifier">DepthFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;DepthFormat.DEPTH24_STENCIL8<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.DepthBuffer.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/multisample">multisample</span><span class="symbol">:</span>&nbsp;<a href="../-buffer-multisample/index.html"><span class="identifier">BufferMultisample</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">DepthBuffer</span></a></code></td>
 </tr>
 </tbody>
 </table>

@@ -8,6 +8,7 @@
 <a href="../index.html">openrndr</a>&nbsp;/&nbsp;<a href="./index.html">org.openrndr.extensions</a><br/>
 <br/>
 <h2>Package org.openrndr.extensions</h2>
+<p>a simple Extension interface with which default Program behaviour can be changed.</p>
 <h3>Types</h3>
 <table>
 <tbody>
@@ -51,7 +52,18 @@
 <p><a href="-screenshots/index.html">Screenshots</a></p>
 </td>
 <td>
-<code><span class="keyword">class </span><span class="identifier">Screenshots</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../org.openrndr/-extension/index.html"><span class="identifier">Extension</span></a></code></td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Screenshots</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../org.openrndr/-extension/index.html"><span class="identifier">Extension</span></a></code>
+<p>an extension that takes screenshots when <a href="-screenshots/key.html">key</a> (default is spacebar) is pressed</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-single-screenshot/index.html">SingleScreenshot</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">SingleScreenshot</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-screenshots/index.html"><span class="identifier">Screenshots</span></a></code>
+<p>specialized version of the <a href="-screenshots/index.html">Screenshots</a> extension that takes a single screenshot and exits</p>
+</td>
 </tr>
 </tbody>
 </table>

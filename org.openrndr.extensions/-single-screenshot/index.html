@@ -1,0 +1,121 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SingleScreenshot - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.extensions</a>&nbsp;/&nbsp;<a href="./index.html">SingleScreenshot</a><br/>
+<br/>
+<h1>SingleScreenshot</h1>
+<code><span class="keyword">class </span><span class="identifier">SingleScreenshot</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-screenshots/index.html"><span class="identifier">Screenshots</span></a></code>
+<p>specialized version of the <a href="../-screenshots/index.html">Screenshots</a> extension that takes a single screenshot and exits</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">SingleScreenshot</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>specialized version of the <a href="../-screenshots/index.html">Screenshots</a> extension that takes a single screenshot and exits</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="output-file.html">outputFile</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">outputFile</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>filename of the screenshot output</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-screenshots/enabled.html">enabled</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">var </span><span class="identifier">enabled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-screenshots/key.html">key</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">key</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>the key that should be pressed to take a screenshot</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-screenshots/multisample.html">multisample</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">multisample</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-buffer-multisample/index.html"><span class="identifier">BufferMultisample</span></a></code>
+<p>multisample settings</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-screenshots/quit-after-screenshot.html">quitAfterScreenshot</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">quitAfterScreenshot</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>should the program quit after taking a screenshot?</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-screenshots/scale.html">scale</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">scale</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code>
+<p>scale can be se to be greater than 1.0 for higher resolution screenshots</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="setup.html">setup</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setup</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.extensions.SingleScreenshot$setup(org.openrndr.Program)/program">program</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr/-program/index.html"><span class="identifier">Program</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-screenshots/after-draw.html">afterDraw</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">afterDraw</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.extensions.Screenshots$afterDraw(org.openrndr.draw.Drawer, org.openrndr.Program)/drawer">drawer</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.extensions.Screenshots$afterDraw(org.openrndr.draw.Drawer, org.openrndr.Program)/program">program</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr/-program/index.html"><span class="identifier">Program</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-screenshots/before-draw.html">beforeDraw</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">beforeDraw</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.extensions.Screenshots$beforeDraw(org.openrndr.draw.Drawer, org.openrndr.Program)/drawer">drawer</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.extensions.Screenshots$beforeDraw(org.openrndr.draw.Drawer, org.openrndr.Program)/program">program</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr/-program/index.html"><span class="identifier">Program</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

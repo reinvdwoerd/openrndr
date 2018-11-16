@@ -17,7 +17,7 @@
 <p><a href="-init-.html">&lt;init&gt;</a></p>
 </td>
 <td>
-<code><span class="identifier">DepthBufferGL3</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/texture">texture</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-depth-format/index.html"><span class="identifier">DepthFormat</span></a><span class="symbol">)</span></code></td>
+<code><span class="identifier">DepthBufferGL3</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/texture">texture</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/target">target</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-depth-format/index.html"><span class="identifier">DepthFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/multisample">multisample</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-buffer-multisample/index.html"><span class="identifier">BufferMultisample</span></a><span class="symbol">)</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -37,6 +37,20 @@
 </td>
 <td>
 <code><span class="keyword">val </span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="multisample.html">multisample</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">multisample</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-buffer-multisample/index.html"><span class="identifier">BufferMultisample</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="target.html">target</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">target</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
 </tr>
 <tr>
 <td>
@@ -83,6 +97,13 @@
 <td>
 <code><span class="keyword">fun </span><span class="identifier">destroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
+<tr>
+<td>
+<p><a href="resolve-to.html">resolveTo</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">resolveTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3$resolveTo(org.openrndr.draw.DepthBuffer)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-depth-buffer/index.html"><span class="identifier">DepthBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
 </tbody>
 </table>
 <h3>Companion Object Functions</h3>
@@ -93,7 +114,7 @@
 <p><a href="create.html">create</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-depth-format/index.html"><span class="identifier">DepthFormat</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">DepthBufferGL3</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-depth-format/index.html"><span class="identifier">DepthFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.DepthBufferGL3.Companion$create(kotlin.Int, kotlin.Int, org.openrndr.draw.DepthFormat, org.openrndr.draw.BufferMultisample)/multisample">multisample</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-buffer-multisample/index.html"><span class="identifier">BufferMultisample</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">DepthBufferGL3</span></a></code></td>
 </tr>
 </tbody>
 </table>
