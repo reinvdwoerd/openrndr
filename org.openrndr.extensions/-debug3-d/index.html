@@ -8,7 +8,9 @@
 <a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.extensions</a>&nbsp;/&nbsp;<a href="./index.html">Debug3D</a><br/>
 <br/>
 <h1>Debug3D</h1>
-<code><span class="keyword">class </span><span class="identifier">Debug3D</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../org.openrndr/-extension/index.html"><span class="identifier">Extension</span></a></code>
+<code><span class="keyword">class </span><s><span class="identifier">Debug3D</span></s>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../org.openrndr/-extension/index.html"><span class="identifier">Extension</span></a></code><br/>
+<strong>Deprecated:</strong> superseded by orx-camera<br/>
+<br/>
 <h3>Constructors</h3>
 <table>
 <tbody>
@@ -17,7 +19,7 @@
 <p><a href="-init-.html">&lt;init&gt;</a></p>
 </td>
 <td>
-<code><span class="identifier">Debug3D</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.extensions.Debug3D$<init>(org.openrndr.math.Vector3, org.openrndr.math.Vector3, kotlin.Double)/eye">eye</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Vector3(0.0, 0.0, 10.0)<span class="symbol">, </span><span class="identifier" id="org.openrndr.extensions.Debug3D$<init>(org.openrndr.math.Vector3, org.openrndr.math.Vector3, kotlin.Double)/lookAt">lookAt</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Vector3.ZERO<span class="symbol">, </span><span class="identifier" id="org.openrndr.extensions.Debug3D$<init>(org.openrndr.math.Vector3, org.openrndr.math.Vector3, kotlin.Double)/fov">fov</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;90.0<span class="symbol">)</span></code></td>
+<code><span class="identifier">Debug3D</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.extensions.Debug3D$<init>(org.openrndr.math.Vector3, org.openrndr.math.Vector3)/eye">eye</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Vector3(0.0, 0.0, 10.0)<span class="symbol">, </span><span class="identifier" id="org.openrndr.extensions.Debug3D$<init>(org.openrndr.math.Vector3, org.openrndr.math.Vector3)/lookAt">lookAt</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Vector3.ZERO<span class="symbol">)</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -33,6 +35,13 @@
 </tr>
 <tr>
 <td>
+<p><a href="fov.html">fov</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">fov</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
 <p><a href="orbital-camera.html">orbitalCamera</a></p>
 </td>
 <td>
@@ -44,6 +53,20 @@
 </td>
 <td>
 <code><span class="keyword">var </span><span class="identifier">showGrid</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="z-far.html">zFar</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">zFar</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="z-near.html">zNear</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">zNear</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
 </tr>
 </tbody>
 </table>
