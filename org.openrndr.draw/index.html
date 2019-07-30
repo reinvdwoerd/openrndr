@@ -14,6 +14,13 @@
 <tbody>
 <tr>
 <td>
+<p><a href="-array-texture/index.html">ArrayTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">ArrayTexture</span></code></td>
+</tr>
+<tr>
+<td>
 <p><a href="-blend-mode/index.html">BlendMode</a></p>
 </td>
 <td>
@@ -83,13 +90,6 @@
 </td>
 <td>
 <code><span class="keyword">interface </span><span class="identifier">ColorBufferShadow</span></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="-color-buffer-tile/index.html">ColorBufferTile</a></p>
-</td>
-<td>
-<code><span class="keyword">class </span><span class="identifier">ColorBufferTile</span></code></td>
 </tr>
 <tr>
 <td>
@@ -477,6 +477,15 @@
 <tbody>
 <tr>
 <td>
+<p><a href="array-texture.html">arrayTexture</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">arrayTexture</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$arrayTexture(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$arrayTexture(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$arrayTexture(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/layers">layers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$arrayTexture(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorFormat.RGBa<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$arrayTexture(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorType.UINT8<span class="symbol">)</span><span class="symbol">: </span><a href="-array-texture/index.html"><span class="identifier">ArrayTexture</span></a></code>
+<p>Creates an array texture</p>
+</td>
+</tr>
+<tr>
+<td>
 <p><a href="code-from-stream.html">codeFromStream</a></p>
 </td>
 <td>
@@ -583,6 +592,14 @@
 <code><span class="keyword">fun </span><a href="-draw-thread/index.html"><span class="identifier">DrawThread</span></a><span class="symbol">.</span><span class="identifier">launch</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$launch(org.openrndr.draw.DrawThread, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.dispatcher<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$launch(org.openrndr.draw.DrawThread, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/start">start</span><span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineStart</span>&nbsp;<span class="symbol">=</span>&nbsp;CoroutineStart.DEFAULT<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$launch(org.openrndr.draw.DrawThread, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">CoroutineScope</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code>
 <p>launches a coroutine on the <a href="-draw-thread/index.html">DrawThread</a></p>
 </td>
+</tr>
+<tr>
+<td>
+<p><a href="load-font.html">loadFont</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="../org.openrndr/-program/index.html"><span class="identifier">Program</span></a><span class="symbol">.</span><span class="identifier">loadFont</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$loadFont(org.openrndr.Program, kotlin.String, kotlin.Double, kotlin.Double)/fileOrUrl">fileOrUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$loadFont(org.openrndr.Program, kotlin.String, kotlin.Double, kotlin.Double)/size">size</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$loadFont(org.openrndr.Program, kotlin.String, kotlin.Double, kotlin.Double)/contentScale">contentScale</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;this.drawer.context.contentScale<span class="symbol">)</span><span class="symbol">: </span><a href="-font-image-map/index.html"><span class="identifier">FontImageMap</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">loadFont</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw$loadFont(kotlin.String, kotlin.Double, kotlin.Double)/fileOrUrl">fileOrUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$loadFont(kotlin.String, kotlin.Double, kotlin.Double)/size">size</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw$loadFont(kotlin.String, kotlin.Double, kotlin.Double)/contentScale">contentScale</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;1.0<span class="symbol">)</span><span class="symbol">: </span><a href="-font-image-map/index.html"><span class="identifier">FontImageMap</span></a></code></td>
 </tr>
 <tr>
 <td>

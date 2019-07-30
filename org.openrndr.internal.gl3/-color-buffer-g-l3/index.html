@@ -200,6 +200,15 @@
 </tr>
 <tr>
 <td>
+<p><a href="copy-to.html">copyTo</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">copyTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3$copyTo(org.openrndr.draw.ColorBuffer)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>copies contents to a target color buffer</p>
+<code><span class="keyword">fun </span><span class="identifier">copyTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3$copyTo(org.openrndr.draw.ArrayTexture, kotlin.Int)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-array-texture/index.html"><span class="identifier">ArrayTexture</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3$copyTo(org.openrndr.draw.ArrayTexture, kotlin.Int)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
 <p><a href="destroy.html">destroy</a></p>
 </td>
 <td>
@@ -236,7 +245,7 @@
 </td>
 <td>
 <code><span class="keyword">fun </span><span class="identifier">resolveTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3$resolveTo(org.openrndr.draw.ColorBuffer)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
-<p>resolves (or copies) to a non-multisampled color buffer</p>
+<p>resolves contents to a non-multisampled color buffer</p>
 </td>
 </tr>
 <tr>
@@ -253,7 +262,7 @@
 <p><a href="write.html">write</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3$write(java.nio.ByteBuffer)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3$write(java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3$write(java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/sourceFormat">sourceFormat</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-format/index.html"><span class="identifier">ColorFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3$write(java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/sourceType">sourceType</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-type/index.html"><span class="identifier">ColorType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 </tbody>
 </table>
@@ -301,13 +310,6 @@
 </td>
 <td>
 <code><span class="keyword">fun </span><span class="identifier">fromUrl</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3.Companion$fromUrl(kotlin.String)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a></code></td>
-</tr>
-<tr>
-<td>
-<p><a href="tiles-from-file.html">tilesFromFile</a></p>
-</td>
-<td>
-<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">tilesFromFile</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3.Companion$tilesFromFile(kotlin.String, kotlin.Int, kotlin.Int)/filename">filename</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3.Companion$tilesFromFile(kotlin.String, kotlin.Int, kotlin.Int)/tileWidth">tileWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ColorBufferGL3.Companion$tilesFromFile(kotlin.String, kotlin.Int, kotlin.Int)/tileHeight">tileHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.draw/-color-buffer-tile/index.html"><span class="identifier">ColorBufferTile</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
 </tr>
 </tbody>
 </table>

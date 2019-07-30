@@ -1,0 +1,191 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ArrayTextureGL3 - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.internal.gl3</a>&nbsp;/&nbsp;<a href="./index.html">ArrayTextureGL3</a><br/>
+<br/>
+<h1>ArrayTextureGL3</h1>
+<code><span class="keyword">class </span><span class="identifier">ArrayTextureGL3</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-array-texture/index.html"><span class="identifier">ArrayTexture</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ArrayTextureGL3</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/target">target</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/texture">texture</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/layers">layers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-format/index.html"><span class="identifier">ColorFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$<init>(kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-type/index.html"><span class="identifier">ColorType</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="filter-mag.html">filterMag</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">filterMag</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-magnifying-filter/index.html"><span class="identifier">MagnifyingFilter</span></a></code>
+<p>the filter to use when displaying at sizes larger than the original</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="filter-min.html">filterMin</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">filterMin</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-minifying-filter/index.html"><span class="identifier">MinifyingFilter</span></a></code>
+<p>the filter to use when displaying at sizes smaller than the original</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="flip-v.html">flipV</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">flipV</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="format.html">format</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">format</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-color-format/index.html"><span class="identifier">ColorFormat</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="height.html">height</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">height</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="layers.html">layers</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">layers</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="target.html">target</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">target</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="texture.html">texture</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">texture</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="type.html">type</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-color-type/index.html"><span class="identifier">ColorType</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="width.html">width</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">width</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="wrap-u.html">wrapU</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">wrapU</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-wrap-mode/index.html"><span class="identifier">WrapMode</span></a></code>
+<p>the wrapping mode to use in the horizontal direction</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wrap-v.html">wrapV</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">wrapV</span><span class="symbol">: </span><a href="../../org.openrndr.draw/-wrap-mode/index.html"><span class="identifier">WrapMode</span></a></code>
+<p>the wrapping mode to use in the vertical direction</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../org.openrndr.draw/-array-texture/bounds.html">bounds</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">bounds</span><span class="symbol">: </span><a href="../../org.openrndr.shape/-rectangle/index.html"><span class="identifier">Rectangle</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="bind.html">bind</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">bind</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$bind(kotlin.Int)/unit">unit</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="copy-to.html">copyTo</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">copyTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$copyTo(kotlin.Int, org.openrndr.draw.ColorBuffer)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$copyTo(kotlin.Int, org.openrndr.draw.ColorBuffer)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">copyTo</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$copyTo(kotlin.Int, org.openrndr.draw.ArrayTexture, kotlin.Int)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$copyTo(kotlin.Int, org.openrndr.draw.ArrayTexture, kotlin.Int)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-array-texture/index.html"><span class="identifier">ArrayTexture</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$copyTo(kotlin.Int, org.openrndr.draw.ArrayTexture, kotlin.Int)/targetLayer">targetLayer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Copy contents in layer to target ColorBuffer</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="destroy.html">destroy</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">destroy</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="read.html">read</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">read</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$read(kotlin.Int, java.nio.ByteBuffer)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$read(kotlin.Int, java.nio.ByteBuffer)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="write.html">write</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">write</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$write(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/layer">layer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$write(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/buffer">buffer</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html"><span class="identifier">ByteBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$write(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/sourceFormat">sourceFormat</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-format/index.html"><span class="identifier">ColorFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3$write(kotlin.Int, java.nio.ByteBuffer, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/sourceType">sourceType</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-type/index.html"><span class="identifier">ColorType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Write to a single layer in the array texture</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create.html">create</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/layers">layers</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-format/index.html"><span class="identifier">ColorFormat</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.internal.gl3.ArrayTextureGL3.Companion$create(kotlin.Int, kotlin.Int, kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-color-type/index.html"><span class="identifier">ColorType</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ArrayTextureGL3</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
