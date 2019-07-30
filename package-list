@@ -14,6 +14,7 @@ org.openrndr.animatable
 org.openrndr.animatable.easing
 org.openrndr.binpack
 org.openrndr.color
+org.openrndr.dialogs
 org.openrndr.draw
 org.openrndr.events
 org.openrndr.extensions
