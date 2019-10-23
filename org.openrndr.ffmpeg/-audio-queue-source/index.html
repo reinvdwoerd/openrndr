@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AudioQueueSource - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.ffmpeg</a>&nbsp;/&nbsp;<a href="./index.html">AudioQueueSource</a><br/>
+<br/>
+<h1>AudioQueueSource</h1>
+<code><span class="keyword">class </span><span class="identifier">AudioQueueSource</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">AudioQueueSource</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.ffmpeg.AudioQueueSource$<init>(kotlin.Int, kotlin.Int, kotlin.Function0((org.openrndr.ffmpeg.AudioData)))/source">source</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.AudioQueueSource$<init>(kotlin.Int, kotlin.Int, kotlin.Function0((org.openrndr.ffmpeg.AudioData)))/bufferCount">bufferCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;4<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.AudioQueueSource$<init>(kotlin.Int, kotlin.Int, kotlin.Function0((org.openrndr.ffmpeg.AudioData)))/pullFunction">pullFunction</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../-audio-data/index.html"><span class="identifier">AudioData</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="buffer-count.html">bufferCount</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">bufferCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="buffer-offset.html">bufferOffset</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">bufferOffset</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="pull-function.html">pullFunction</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">pullFunction</span><span class="symbol">: </span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../-audio-data/index.html"><span class="identifier">AudioData</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="sample-offset.html">sampleOffset</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">sampleOffset</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="source.html">source</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">source</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="flush.html">flush</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">flush</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="play.html">play</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">play</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="queue.html">queue</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">queue</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.ffmpeg.AudioQueueSource$queue(org.openrndr.ffmpeg.AudioData)/data">data</span><span class="symbol">:</span>&nbsp;<a href="../-audio-data/index.html"><span class="identifier">AudioData</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
