@@ -73,6 +73,13 @@
 </tr>
 <tr>
 <td>
+<p><a href="equidistant-positions.html">equidistantPositions</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equidistantPositions</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Path3D$equidistantPositions(kotlin.Int)/pointCount">pointCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
 <p><a href="map.html">map</a></p>
 </td>
 <td>
@@ -108,6 +115,24 @@
 <td>
 <code><span class="keyword">fun </span><span class="identifier">project</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Path3D$project(org.openrndr.math.Vector3)/point">point</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.math/-vector3/index.html"><span class="identifier">Vector3</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../-path-projection3-d/index.html"><span class="identifier">PathProjection3D</span></a></code>
 <p>Project a point on the contour</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="sample-equidistant.html">sampleEquidistant</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">sampleEquidistant</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Path3D$sampleEquidistant(kotlin.Int)/pointCount">pointCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Path3D</span></a></code>
+<p>Sample the shape contour into line segments</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="sample-linear.html">sampleLinear</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">sampleLinear</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.shape.Path3D$sampleLinear(kotlin.Double)/distanceTolerance">distanceTolerance</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a>&nbsp;<span class="symbol">=</span>&nbsp;0.5<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Path3D</span></a></code>
+<p>Adaptively sample the contour into line segments while still approximating the original contour</p>
 </td>
 </tr>
 <tr>
