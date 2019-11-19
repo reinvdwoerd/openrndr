@@ -37,6 +37,13 @@
 </tr>
 <tr>
 <td>
+<p><a href="-dispatcher/index.html">Dispatcher</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Dispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MainCoroutineDispatcher</span><span class="symbol">, </span><span class="identifier">Delay</span></code></td>
+</tr>
+<tr>
+<td>
 <p><a href="-drop-event/index.html">DropEvent</a></p>
 </td>
 <td>
@@ -142,13 +149,6 @@
 <code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Program</span></code>
 <p>The Program class, this is where most user implementations start</p>
 </td>
-</tr>
-<tr>
-<td>
-<p><a href="-pump-dispatcher/index.html">PumpDispatcher</a></p>
-</td>
-<td>
-<code><span class="keyword">class </span><span class="identifier">PumpDispatcher</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MainCoroutineDispatcher</span><span class="symbol">, </span><span class="identifier">Delay</span></code></td>
 </tr>
 <tr>
 <td>
@@ -443,6 +443,7 @@ writing applications.</p>
 <p><a href="launch.html">launch</a></p>
 </td>
 <td>
+<code><span class="keyword">fun </span><a href="-dispatcher/index.html"><span class="identifier">Dispatcher</span></a><span class="symbol">.</span><span class="identifier">launch</span><span class="symbol">(</span><span class="identifier" id="org.openrndr$launch(org.openrndr.Dispatcher, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/start">start</span><span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineStart</span>&nbsp;<span class="symbol">=</span>&nbsp;CoroutineStart.DEFAULT<span class="symbol">, </span><span class="identifier" id="org.openrndr$launch(org.openrndr.Dispatcher, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">CoroutineScope</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code><br/>
 <code><span class="keyword">fun </span><a href="-program/index.html"><span class="identifier">Program</span></a><span class="symbol">.</span><span class="identifier">launch</span><span class="symbol">(</span><span class="identifier" id="org.openrndr$launch(org.openrndr.Program, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html"><span class="identifier">CoroutineContext</span></a>&nbsp;<span class="symbol">=</span>&nbsp;dispatcher<span class="symbol">, </span><span class="identifier" id="org.openrndr$launch(org.openrndr.Program, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/start">start</span><span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineStart</span>&nbsp;<span class="symbol">=</span>&nbsp;CoroutineStart.DEFAULT<span class="symbol">, </span><span class="identifier" id="org.openrndr$launch(org.openrndr.Program, kotlin.coroutines.CoroutineContext, kotlinx.coroutines.CoroutineStart, kotlin.SuspendFunction1((kotlinx.coroutines.CoroutineScope, kotlin.Unit)))/block">block</span><span class="symbol">:</span>&nbsp;<span class="keyword">suspend </span><span class="identifier">CoroutineScope</span><span class="symbol">.</span><span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code></td>
 </tr>
 <tr>
