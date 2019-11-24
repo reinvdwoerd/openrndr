@@ -9,6 +9,7 @@
 <br/>
 <h1>VideoPlayerFFMPEG</h1>
 <code><span class="keyword">class </span><span class="identifier">VideoPlayerFFMPEG</span></code>
+<p>Video player based on FFMPEG</p>
 <h3>Properties</h3>
 <table>
 <tbody>
@@ -17,7 +18,9 @@
 <p><a href="audio-gain.html">audioGain</a></p>
 </td>
 <td>
-<code><span class="keyword">var </span><span class="identifier">audioGain</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+<code><span class="keyword">var </span><span class="identifier">audioGain</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code>
+<p>Controls the gain of the audio</p>
+</td>
 </tr>
 <tr>
 <td>
@@ -64,14 +67,18 @@
 <p><a href="draw.html">draw</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">draw</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG$draw(org.openrndr.draw.Drawer, kotlin.Boolean)/drawer">drawer</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG$draw(org.openrndr.draw.Drawer, kotlin.Boolean)/blind">blind</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">draw</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG$draw(org.openrndr.draw.Drawer, kotlin.Boolean, kotlin.Boolean)/drawer">drawer</span><span class="symbol">:</span>&nbsp;<a href="../../org.openrndr.draw/-drawer/index.html"><span class="identifier">Drawer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG$draw(org.openrndr.draw.Drawer, kotlin.Boolean, kotlin.Boolean)/blind">blind</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG$draw(org.openrndr.draw.Drawer, kotlin.Boolean, kotlin.Boolean)/update">update</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Draw the current frame</p>
+</td>
 </tr>
 <tr>
 <td>
 <p><a href="play.html">play</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">play</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">play</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Start playing the stream</p>
+</td>
 </tr>
 <tr>
 <td>
@@ -85,7 +92,9 @@
 <p><a href="seek.html">seek</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">seek</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG$seek(kotlin.Double)/positionInSeconds">positionInSeconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">seek</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG$seek(kotlin.Double)/positionInSeconds">positionInSeconds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Seek in the video</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -97,28 +106,36 @@
 <p><a href="default-device.html">defaultDevice</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">defaultDevice</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">defaultDevice</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Returns machine-specific default device</p>
+</td>
 </tr>
 <tr>
 <td>
 <p><a href="from-device.html">fromDevice</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">fromDevice</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/deviceName">deviceName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultDevice()<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/mode">mode</span><span class="symbol">:</span>&nbsp;<a href="../-play-mode/index.html"><span class="identifier">PlayMode</span></a>&nbsp;<span class="symbol">=</span>&nbsp;PlayMode.VIDEO<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/frameRate">frameRate</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/imageWidth">imageWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/imageHeight">imageHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/configuration">configuration</span><span class="symbol">:</span>&nbsp;<a href="../-video-player-configuration/index.html"><span class="identifier">VideoPlayerConfiguration</span></a>&nbsp;<span class="symbol">=</span>&nbsp;VideoPlayerConfiguration()<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">VideoPlayerFFMPEG</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">fromDevice</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/deviceName">deviceName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;defaultDevice()<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/mode">mode</span><span class="symbol">:</span>&nbsp;<a href="../-play-mode/index.html"><span class="identifier">PlayMode</span></a>&nbsp;<span class="symbol">=</span>&nbsp;PlayMode.VIDEO<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/frameRate">frameRate</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/imageWidth">imageWidth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/imageHeight">imageHeight</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromDevice(kotlin.String, org.openrndr.ffmpeg.PlayMode, kotlin.Double, kotlin.Int, kotlin.Int, org.openrndr.ffmpeg.VideoPlayerConfiguration)/configuration">configuration</span><span class="symbol">:</span>&nbsp;<a href="../-video-player-configuration/index.html"><span class="identifier">VideoPlayerConfiguration</span></a>&nbsp;<span class="symbol">=</span>&nbsp;VideoPlayerConfiguration()<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">VideoPlayerFFMPEG</span></a></code>
+<p>Opens a webcam or video device</p>
+</td>
 </tr>
 <tr>
 <td>
 <p><a href="from-file.html">fromFile</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">fromFile</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromFile(kotlin.String, org.openrndr.ffmpeg.PlayMode, org.openrndr.ffmpeg.VideoPlayerConfiguration)/fileName">fileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromFile(kotlin.String, org.openrndr.ffmpeg.PlayMode, org.openrndr.ffmpeg.VideoPlayerConfiguration)/mode">mode</span><span class="symbol">:</span>&nbsp;<a href="../-play-mode/index.html"><span class="identifier">PlayMode</span></a>&nbsp;<span class="symbol">=</span>&nbsp;PlayMode.BOTH<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromFile(kotlin.String, org.openrndr.ffmpeg.PlayMode, org.openrndr.ffmpeg.VideoPlayerConfiguration)/configuration">configuration</span><span class="symbol">:</span>&nbsp;<a href="../-video-player-configuration/index.html"><span class="identifier">VideoPlayerConfiguration</span></a>&nbsp;<span class="symbol">=</span>&nbsp;VideoPlayerConfiguration()<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">VideoPlayerFFMPEG</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">fromFile</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromFile(kotlin.String, org.openrndr.ffmpeg.PlayMode, org.openrndr.ffmpeg.VideoPlayerConfiguration)/fileName">fileName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromFile(kotlin.String, org.openrndr.ffmpeg.PlayMode, org.openrndr.ffmpeg.VideoPlayerConfiguration)/mode">mode</span><span class="symbol">:</span>&nbsp;<a href="../-play-mode/index.html"><span class="identifier">PlayMode</span></a>&nbsp;<span class="symbol">=</span>&nbsp;PlayMode.BOTH<span class="symbol">, </span><span class="identifier" id="org.openrndr.ffmpeg.VideoPlayerFFMPEG.Companion$fromFile(kotlin.String, org.openrndr.ffmpeg.PlayMode, org.openrndr.ffmpeg.VideoPlayerConfiguration)/configuration">configuration</span><span class="symbol">:</span>&nbsp;<a href="../-video-player-configuration/index.html"><span class="identifier">VideoPlayerConfiguration</span></a>&nbsp;<span class="symbol">=</span>&nbsp;VideoPlayerConfiguration()<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">VideoPlayerFFMPEG</span></a></code>
+<p>Opens a video from file or url</p>
+</td>
 </tr>
 <tr>
 <td>
 <p><a href="list-device-names.html">listDeviceNames</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">listDeviceNames</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">fun </span><span class="identifier">listDeviceNames</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code>
+<p>Lists the available machine-specific device names</p>
+</td>
 </tr>
 </tbody>
 </table>
