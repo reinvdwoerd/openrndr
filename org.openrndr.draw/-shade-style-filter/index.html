@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ShadeStyleFilter - openrndr</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">openrndr</a>&nbsp;/&nbsp;<a href="../index.html">org.openrndr.draw</a>&nbsp;/&nbsp;<a href="./index.html">ShadeStyleFilter</a><br/>
+<br/>
+<h1>ShadeStyleFilter</h1>
+<code><span class="keyword">class </span><span class="identifier">ShadeStyleFilter</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-filter/index.html"><span class="identifier">Filter</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ShadeStyleFilter</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyleFilter$<init>(org.openrndr.draw.ShadeStyle)/shadeStyle">shadeStyle</span><span class="symbol">:</span>&nbsp;<a href="../-shade-style/index.html"><span class="identifier">ShadeStyle</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="fill.html">fill</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">fill</span><span class="symbol">: </span><a href="../../org.openrndr.color/-color-r-g-ba/index.html"><span class="identifier">ColorRGBa</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="shade-style.html">shadeStyle</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">shadeStyle</span><span class="symbol">: </span><a href="../-shade-style/index.html"><span class="identifier">ShadeStyle</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-filter/format.html">format</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">format</span><span class="symbol">: </span><a href="../-vertex-format/index.html"><span class="identifier">VertexFormat</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-filter/padding.html">padding</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">padding</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-filter/parameters.html">parameters</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">parameters</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">&gt;</span></code>
+<p>parameter map</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="apply.html">apply</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">apply</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.ShadeStyleFilter$apply(kotlin.Array((org.openrndr.draw.ColorBuffer)), kotlin.Array((org.openrndr.draw.ColorBuffer)))/source">source</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.ShadeStyleFilter$apply(kotlin.Array((org.openrndr.draw.ColorBuffer)), kotlin.Array((org.openrndr.draw.ColorBuffer)))/target">target</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-filter/apply.html">apply</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">apply</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.RenderTarget, org.openrndr.draw.RenderTarget)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../-render-target/index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.RenderTarget, org.openrndr.draw.RenderTarget)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../-render-target/index.html"><span class="identifier">RenderTarget</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">apply</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.ColorBuffer, org.openrndr.draw.ColorBuffer)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.ColorBuffer, org.openrndr.draw.ColorBuffer)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">apply</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.ColorBuffer, kotlin.Array((org.openrndr.draw.ColorBuffer)))/source">source</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Filter$apply(org.openrndr.draw.ColorBuffer, kotlin.Array((org.openrndr.draw.ColorBuffer)))/target">target</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">apply</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Filter$apply(kotlin.Array((org.openrndr.draw.ColorBuffer)), org.openrndr.draw.ColorBuffer)/source">source</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Filter$apply(kotlin.Array((org.openrndr.draw.ColorBuffer)), org.openrndr.draw.ColorBuffer)/target">target</span><span class="symbol">:</span>&nbsp;<a href="../-color-buffer/index.html"><span class="identifier">ColorBuffer</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-filter/untrack.html">untrack</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">untrack</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
