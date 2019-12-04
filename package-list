@@ -19,13 +19,7 @@ org.openrndr.draw
 org.openrndr.events
 org.openrndr.extensions
 org.openrndr.ffmpeg
-org.openrndr.filter.antialias
-org.openrndr.filter.blend
-org.openrndr.filter.blur
 org.openrndr.filter.color
-org.openrndr.filter.dither
-org.openrndr.filter.transforms
-org.openrndr.filter.unary
 org.openrndr.internal
 org.openrndr.internal.gl3
 org.openrndr.internal.gl3.dds
