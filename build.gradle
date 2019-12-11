@@ -127,6 +127,7 @@ allprojects {
         userOrg = 'openrndr'
         repo = 'openrndr'
         pkgName = 'openrndr'
+        gppSign = false
         syncToMavenCentral = false
         licenses = ['BSD-2-Clause']
         vcsUrl = 'https://github.com/openrndr/openrndr.git'
