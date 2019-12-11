@@ -123,7 +123,8 @@ allprojects {
 
     bintray {
         user = findProperty('bintrayUser') ?: System.getenv('BINTRAY_USER')
-        key = findProperty('bintrayKey') ?: System.getenv('BINTRAY_KEY')
+
+        apiKey = findProperty('bintrayKey') ?: System.getenv('BINTRAY_KEY')
         userOrg = 'openrndr'
         repo = 'openrndr'
         pkgName = 'openrndr'
