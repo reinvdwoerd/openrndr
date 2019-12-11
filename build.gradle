@@ -123,20 +123,16 @@ allprojects {
 
     bintray {
         user = findProperty('bintrayUser') ?: System.getenv('BINTRAY_USER')
-
         apiKey = findProperty('bintrayKey') ?: System.getenv('BINTRAY_KEY')
         userOrg = 'openrndr'
         repo = 'openrndr'
         pkgName = 'openrndr'
-
-//        pkg {
-        //pkgDesc = project.description
+        syncToMavenCentral = false
         licenses = ['BSD-2-Clause']
         vcsUrl = 'https://github.com/openrndr/openrndr.git'
         websiteUrl = 'https://www.openrndr.org'
         issueTrackerUrl = 'https://github.com/openrndr/openrndr/issues'
         labels = ['creative-coding', 'realtime-rendering', 'opengl']
-//        }
     }
 }
 
