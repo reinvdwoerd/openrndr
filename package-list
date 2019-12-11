@@ -27,7 +27,6 @@ org.openrndr.math
 org.openrndr.math.transforms
 org.openrndr.openal
 org.openrndr.platform
-org.openrndr.shadestyle
 org.openrndr.shape
 org.openrndr.svg
 org.openrndr.text
