@@ -7,17 +7,17 @@ import org.openrndr.math.*
 interface Shader {
     @Suppress("unused")
     companion object {
-        fun createFromUrls(vsUrl: String, fsUrl: String): Shader {
+        fun createFromUrls(vsUrl: String, fsUrl: String, session: Session? = Session.active): Shader {
             val vsCode = codeFromURL(vsUrl)
             val fsCode = codeFromURL(fsUrl)
             val shader = Driver.instance.createShader(vsCode, fsCode)
-            Session.active.track(shader)
+            session?.track(shader)
             return shader
         }
 
-        fun createFromCode(vsCode: String, fsCode: String): Shader {
+        fun createFromCode(vsCode: String, fsCode: String, session: Session? = Session.active): Shader {
             val shader = Driver.instance.createShader(vsCode, fsCode)
-            Session.active.track(shader)
+            session?.track(shader)
             return shader
         }
     }

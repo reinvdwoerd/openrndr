@@ -160,34 +160,40 @@ interface ColorBuffer {
     }
 
     companion object {
-        fun fromUrl(url: String): ColorBuffer {
+        fun fromUrl(url: String, session: Session? = Session.active): ColorBuffer {
             val colorBuffer = Driver.instance.createColorBufferFromUrl(url)
             Session.active.track(colorBuffer)
             return colorBuffer
         }
 
-        fun fromFile(file: File): ColorBuffer {
+        fun fromFile(file: File, session: Session? = Session.active): ColorBuffer {
             val colorBuffer = Driver.instance.createColorBufferFromFile(file.absolutePath)
-            Session.active.track(colorBuffer)
+            session?.track(colorBuffer)
             return colorBuffer
         }
 
-        fun fromFile(filename: String): ColorBuffer {
+        fun fromFile(filename: String, session: Session? = Session.active): ColorBuffer {
             val colorBuffer = Driver.instance.createColorBufferFromFile(filename)
-            Session.active.track(colorBuffer)
+            session?.track(colorBuffer)
             return colorBuffer
         }
 
-        fun fromStream(stream: InputStream, formatHint: String? = null): ColorBuffer {
-            return Driver.instance.createColorBufferFromStream(stream)
+        fun fromStream(stream: InputStream, formatHint: String? = null, session: Session? = Session.active): ColorBuffer {
+            val colorBuffer = Driver.instance.createColorBufferFromStream(stream)
+            session?.track(colorBuffer)
+            return colorBuffer
         }
 
-        fun fromArray(bytes: ByteArray, offset: Int = 0, length: Int = bytes.size): ColorBuffer {
-            return Driver.instance.createColorBufferFromArray(bytes)
+        fun fromArray(bytes: ByteArray, offset: Int = 0, length: Int = bytes.size, session: Session? = Session.active): ColorBuffer {
+            val colorBuffer = Driver.instance.createColorBufferFromArray(bytes)
+            session?.track(colorBuffer)
+            return colorBuffer
         }
 
-        fun fromBuffer(bytes: ByteBuffer): ColorBuffer {
-            return Driver.instance.createColorBufferFromBuffer(bytes)
+        fun fromBuffer(bytes: ByteBuffer, session: Session? = Session.active): ColorBuffer {
+            val colorBuffer = Driver.instance.createColorBufferFromBuffer(bytes)
+            session?.track(colorBuffer)
+            return colorBuffer
         }
 
     }
