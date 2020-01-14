@@ -5,6 +5,8 @@ import org.openrndr.internal.Driver
 import org.openrndr.math.*
 
 interface Shader {
+    val session: Session?
+
     @Suppress("unused")
     companion object {
         fun createFromUrls(vsUrl: String, fsUrl: String, session: Session? = Session.active): Shader {

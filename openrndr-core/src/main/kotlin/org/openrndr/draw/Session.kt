@@ -26,6 +26,7 @@ class Session {
     private val bufferTextures = mutableSetOf<BufferTexture>()
     private val vertexBuffers = mutableSetOf<VertexBuffer>()
     private val shaders = mutableSetOf<Shader>()
+    private val computeShaders = mutableSetOf<ComputeShader>()
     private val cubemaps = mutableSetOf<Cubemap>()
     private val arrayTextures = mutableSetOf<ArrayTexture>()
 
@@ -39,6 +40,9 @@ class Session {
                     cubemaps.size,
                     arrayTextures.size)
 
+    fun track(renderTarget: RenderTarget) = renderTargets.add(renderTarget)
+    fun untrack(renderTarget: RenderTarget) = renderTargets.remove(renderTarget)
+
     fun track(colorBuffer: ColorBuffer) = colorBuffers.add(colorBuffer)
     fun untrack(colorBuffer: ColorBuffer) = colorBuffers.remove(colorBuffer)
 
@@ -48,7 +52,10 @@ class Session {
     fun track(shader: Shader) = shaders.add(shader)
     fun untrack(shader: Shader) = shaders.remove(shader)
 
-    fun track(cubemap: Cubemap) =  cubemaps.add(cubemap)
+    fun track(computeShader:ComputeShader) = computeShaders.add(computeShader)
+    fun untrack(computeShader:ComputeShader) = computeShaders.remove(computeShader)
+
+    fun track(cubemap: Cubemap) = cubemaps.add(cubemap)
     fun untrack(cubemap: Cubemap) = cubemaps.remove(cubemap)
 
     fun track(bufferTexture: BufferTexture) = bufferTextures.add(bufferTexture)

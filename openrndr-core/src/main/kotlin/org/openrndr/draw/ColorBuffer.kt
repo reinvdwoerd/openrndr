@@ -66,6 +66,8 @@ sealed class BufferMultisample {
 
 interface ColorBuffer {
 
+    val session: Session?
+    
     /** the width of the [ColorBuffer] in device units */
     val width: Int
 

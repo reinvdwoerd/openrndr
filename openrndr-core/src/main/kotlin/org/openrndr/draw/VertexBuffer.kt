@@ -4,6 +4,8 @@ import org.openrndr.internal.Driver
 import java.nio.ByteBuffer
 
 interface VertexBuffer {
+    val session: Session?
+
     companion object {
         fun createDynamic(format: VertexFormat, vertexCount: Int, session: Session? = Session.active): VertexBuffer {
             val vertexBuffer = Driver.instance.createDynamicVertexBuffer(format, vertexCount)

@@ -6,6 +6,8 @@ import org.openrndr.draw.colorBuffer as _colorBuffer
 import org.openrndr.draw.depthBuffer as _depthBuffer
 
 interface RenderTarget {
+    val session: Session?
+
     val width: Int
     val height: Int
     val contentScale: Double

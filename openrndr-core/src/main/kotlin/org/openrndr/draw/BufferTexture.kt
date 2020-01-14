@@ -3,6 +3,7 @@ package org.openrndr.draw
 import org.openrndr.internal.Driver
 
 interface BufferTexture {
+    val session: Session?
     val shadow: BufferTextureShadow
     val format: ColorFormat
     val type: ColorType

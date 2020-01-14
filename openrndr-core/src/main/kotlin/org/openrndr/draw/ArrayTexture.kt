@@ -6,6 +6,8 @@ import org.openrndr.shape.Rectangle
 import java.nio.ByteBuffer
 
 interface ArrayTexture {
+    val session: Session?
+
     val width: Int
     val height: Int
     val layers: Int
