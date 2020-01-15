@@ -21,6 +21,13 @@
 </tr>
 <tr>
 <td>
+<p><a href="session.html">session</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">session</span><span class="symbol">: </span><a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
 <p><a href="type.html">type</a></p>
 </td>
 <td>
@@ -83,21 +90,21 @@
 <p><a href="create.html">create</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorFormat.RGBa<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorType.UINT8<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Cubemap</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">create</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, org.openrndr.draw.Session)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, org.openrndr.draw.Session)/format">format</span><span class="symbol">:</span>&nbsp;<a href="../-color-format/index.html"><span class="identifier">ColorFormat</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorFormat.RGBa<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, org.openrndr.draw.Session)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../-color-type/index.html"><span class="identifier">ColorType</span></a>&nbsp;<span class="symbol">=</span>&nbsp;ColorType.UINT8<span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$create(kotlin.Int, org.openrndr.draw.ColorFormat, org.openrndr.draw.ColorType, org.openrndr.draw.Session)/session">session</span><span class="symbol">:</span>&nbsp;<a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;Session.active<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Cubemap</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="from-url.html">fromUrl</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">fromUrl</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$fromUrl(kotlin.String)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Cubemap</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">fromUrl</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$fromUrl(kotlin.String, org.openrndr.draw.Session)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$fromUrl(kotlin.String, org.openrndr.draw.Session)/session">session</span><span class="symbol">:</span>&nbsp;<a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Cubemap</span></a></code></td>
 </tr>
 <tr>
 <td>
 <p><a href="from-urls.html">fromUrls</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">fromUrls</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$fromUrls(kotlin.collections.List((kotlin.String)))/urls">urls</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Cubemap</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">fromUrls</span><span class="symbol">(</span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$fromUrls(kotlin.collections.List((kotlin.String)), org.openrndr.draw.Session)/urls">urls</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="org.openrndr.draw.Cubemap.Companion$fromUrls(kotlin.collections.List((kotlin.String)), org.openrndr.draw.Session)/session">session</span><span class="symbol">:</span>&nbsp;<a href="../-session/index.html"><span class="identifier">Session</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Cubemap</span></a></code></td>
 </tr>
 </tbody>
 </table>
