@@ -123,5 +123,4 @@ class RectangleDrawer {
                 ?: emptyList()), DrawPrimitive.TRIANGLES, 0, 6, count)
         shader.end()
     }
-
 }

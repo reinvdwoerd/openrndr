@@ -20,9 +20,6 @@ interface RenderTarget {
     val depthBuffer: DepthBuffer?
 
     companion object {
-        @Deprecated("use the renderTarget builder function instead")
-        fun create(width: Int, height: Int, contentScale: Double, multisample: BufferMultisample): RenderTarget = Driver.instance.createRenderTarget(width, height, contentScale, multisample)
-
         val active: RenderTarget
             get() = Driver.instance.activeRenderTarget
     }
@@ -116,16 +113,18 @@ class RenderTargetBuilder(private val renderTarget: RenderTarget) {
             throw IllegalArgumentException("${depthBuffer.multisample} != ${renderTarget.multisample}")
         }
     }
-
 }
 
-
-fun renderTarget(width: Int, height: Int, contentScale: Double = 1.0, multisample: BufferMultisample = BufferMultisample.Disabled, builder: RenderTargetBuilder.() -> Unit): RenderTarget {
+fun renderTarget(width: Int, height: Int,
+                 contentScale: Double = 1.0,
+                 multisample: BufferMultisample = BufferMultisample.Disabled,
+                 session: Session? = Session.active,
+                 builder: RenderTargetBuilder.() -> Unit): RenderTarget {
     if (width <= 0 || height <= 0) {
         throw IllegalArgumentException("unsupported resolution ($width×$height)")
     }
 
-    val renderTarget = Driver.driver.createRenderTarget(width, height, contentScale, multisample)
+    val renderTarget = Driver.driver.createRenderTarget(width, height, contentScale, multisample, session)
     RenderTargetBuilder(renderTarget).builder()
     return renderTarget
 }
