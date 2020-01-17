@@ -34,7 +34,9 @@
 <p><a href="ended.html">ended</a></p>
 </td>
 <td>
-<code><span class="keyword">val </span><span class="identifier">ended</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-video-event/index.html"><span class="identifier">VideoEvent</span></a><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">val </span><span class="identifier">ended</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-video-event/index.html"><span class="identifier">VideoEvent</span></a><span class="symbol">&gt;</span></code>
+<p>Listenable event, emitted when video ended</p>
+</td>
 </tr>
 <tr>
 <td>
@@ -45,17 +47,12 @@
 </tr>
 <tr>
 <td>
-<p><a href="last-frame-time.html">lastFrameTime</a></p>
-</td>
-<td>
-<code><span class="keyword">var </span><span class="identifier">lastFrameTime</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
-</tr>
-<tr>
-<td>
 <p><a href="new-frame.html">newFrame</a></p>
 </td>
 <td>
-<code><span class="keyword">val </span><span class="identifier">newFrame</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-frame-event/index.html"><span class="identifier">FrameEvent</span></a><span class="symbol">&gt;</span></code></td>
+<code><span class="keyword">val </span><span class="identifier">newFrame</span><span class="symbol">: </span><a href="../../org.openrndr.events/-event/index.html"><span class="identifier">Event</span></a><span class="symbol">&lt;</span><a href="../-frame-event/index.html"><span class="identifier">FrameEvent</span></a><span class="symbol">&gt;</span></code>
+<p>Listenable event, emitted when a new frame arrived</p>
+</td>
 </tr>
 <tr>
 <td>
@@ -81,7 +78,9 @@
 <p><a href="dispose.html">dispose</a></p>
 </td>
 <td>
-<code><span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+<code><span class="keyword">fun </span><span class="identifier">dispose</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Destroy the video player, this releases all allocated resources</p>
+</td>
 </tr>
 <tr>
 <td>
@@ -98,6 +97,13 @@
 </tr>
 <tr>
 <td>
+<p><a href="pause.html">pause</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">pause</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
 <p><a href="play.html">play</a></p>
 </td>
 <td>
@@ -111,6 +117,13 @@
 </td>
 <td>
 <code><span class="keyword">fun </span><span class="identifier">restart</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="resume.html">resume</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">resume</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
 </tr>
 <tr>
 <td>
