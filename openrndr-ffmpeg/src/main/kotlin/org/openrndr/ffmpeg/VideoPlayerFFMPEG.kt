@@ -179,6 +179,15 @@ class VideoPlayerConfiguration {
     var maximumSeekOffset = 0.0
     var legacyStreamOpen = false
     var allowArbitrarySeek = false
+    var seekMode = SeekMode.SEEK_FILE
+}
+
+enum class SeekMode {
+    SEEK_FILE,
+    SEEK_FILE_VIDEO,
+    SEEK_FRAME,
+    SEEK_FRAME_VIDEO
+
 }
 
 private object defaultLogger : Callback_Pointer_int_String_Pointer() {

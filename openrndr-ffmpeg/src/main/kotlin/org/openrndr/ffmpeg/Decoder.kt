@@ -190,7 +190,14 @@ internal class Decoder(private val statistics: VideoStatistics,
             val seekMinTS = ((seekPosition + configuration.minimumSeekOffset) * AV_TIME_BASE).toLong()
             val seekMaxTS = ((seekPosition + configuration.maximumSeekOffset) * AV_TIME_BASE).toLong()
             val seekStarted = System.currentTimeMillis()
-            val seekResult = avformat_seek_file(formatContext, -1, seekMinTS, seekTS, seekMaxTS, if (configuration.allowArbitrarySeek) AVSEEK_FLAG_ANY else 0)
+
+            val seekResult = when(configuration.seekMode) {
+                SeekMode.SEEK_FILE -> avformat_seek_file(formatContext, -1, seekMinTS, seekTS, seekMaxTS, if (configuration.allowArbitrarySeek) AVSEEK_FLAG_ANY else 0)
+                SeekMode.SEEK_FILE_VIDEO -> avformat_seek_file(formatContext, videoStreamIndex, seekMinTS, seekTS, seekMaxTS, if (configuration.allowArbitrarySeek) AVSEEK_FLAG_ANY else 0)
+                SeekMode.SEEK_FRAME -> av_seek_frame(formatContext, -1, (seekPosition * AV_TIME_BASE).toLong(), 0)
+                SeekMode.SEEK_FRAME_VIDEO -> av_seek_frame(formatContext, videoStreamIndex, (seekPosition * AV_TIME_BASE).toLong(), 0)
+            }
+
             logger.debug { "seek completed in ${System.currentTimeMillis() - seekStarted}ms" }
             if (seekResult != 0) {
                 logger.error { "seek failed" }

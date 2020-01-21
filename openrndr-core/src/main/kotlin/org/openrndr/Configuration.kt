@@ -108,7 +108,6 @@ class Configuration {
      **/
     var unfocusBehaviour = UnfocusBehaviour.NORMAL
 
-
     /**
      * Should the window be always on top (floating)
      */
