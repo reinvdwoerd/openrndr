@@ -9,6 +9,7 @@
 <br/>
 <h1>ColorType</h1>
 <code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">ColorType</span></code>
+<p>Color type enumeration</p>
 <h3>Enum Values</h3>
 <table>
 <tbody>
@@ -17,6 +18,7 @@
 <p><a href="-u-i-n-t8.html">UINT8</a></p>
 </td>
 <td>
+<p>unsigned 8 bit integer type</p>
 </td>
 </tr>
 <tr>
@@ -24,6 +26,7 @@
 <p><a href="-u-i-n-t16.html">UINT16</a></p>
 </td>
 <td>
+<p>unsigned 16 bit integer type</p>
 </td>
 </tr>
 <tr>
@@ -31,6 +34,7 @@
 <p><a href="-u-i-n-t8_-i-n-t.html">UINT8_INT</a></p>
 </td>
 <td>
+<p>unsigned 8 bit integer type, with integer sampler</p>
 </td>
 </tr>
 <tr>
@@ -38,6 +42,7 @@
 <p><a href="-u-i-n-t16_-i-n-t.html">UINT16_INT</a></p>
 </td>
 <td>
+<p>unsigned 16 bit integer type, with integer sampler</p>
 </td>
 </tr>
 <tr>
@@ -45,6 +50,7 @@
 <p><a href="-s-i-n-t8_-i-n-t.html">SINT8_INT</a></p>
 </td>
 <td>
+<p>signed 8 bit integer type, with integer sampler</p>
 </td>
 </tr>
 <tr>
@@ -52,6 +58,7 @@
 <p><a href="-s-i-n-t16_-i-n-t.html">SINT16_INT</a></p>
 </td>
 <td>
+<p>signed 16 bit integer type, with integer sampler</p>
 </td>
 </tr>
 <tr>
@@ -59,6 +66,7 @@
 <p><a href="-f-l-o-a-t16.html">FLOAT16</a></p>
 </td>
 <td>
+<p>16 bit float type, or half precision float type</p>
 </td>
 </tr>
 <tr>
@@ -66,6 +74,7 @@
 <p><a href="-f-l-o-a-t32.html">FLOAT32</a></p>
 </td>
 <td>
+<p>32 bit float type, or single precision float type</p>
 </td>
 </tr>
 <tr>
@@ -73,6 +82,7 @@
 <p><a href="-d-x-t1.html">DXT1</a></p>
 </td>
 <td>
+<p>Compressed in DXT1 format</p>
 </td>
 </tr>
 <tr>
@@ -80,6 +90,7 @@
 <p><a href="-d-x-t3.html">DXT3</a></p>
 </td>
 <td>
+<p>Compressed in DXT3 format</p>
 </td>
 </tr>
 <tr>
@@ -87,6 +98,7 @@
 <p><a href="-d-x-t5.html">DXT5</a></p>
 </td>
 <td>
+<p>Compressed in DXT5 format</p>
 </td>
 </tr>
 <tr>
@@ -94,6 +106,7 @@
 <p><a href="-b-p-t-c_-u-n-o-r-m.html">BPTC_UNORM</a></p>
 </td>
 <td>
+<p>Compressed in unsigned normalized BPTC format</p>
 </td>
 </tr>
 <tr>
@@ -101,6 +114,7 @@
 <p><a href="-b-p-t-c_-f-l-o-a-t.html">BPTC_FLOAT</a></p>
 </td>
 <td>
+<p>Compressed in floating point BPTC format</p>
 </td>
 </tr>
 <tr>
@@ -108,6 +122,7 @@
 <p><a href="-b-p-t-c_-u-f-l-o-a-t.html">BPTC_UFLOAT</a></p>
 </td>
 <td>
+<p>Compressed in unsigned floating point BPTC format</p>
 </td>
 </tr>
 </tbody>
@@ -120,21 +135,27 @@
 <p><a href="color-sampling.html">colorSampling</a></p>
 </td>
 <td>
-<code><span class="keyword">val </span><span class="identifier">colorSampling</span><span class="symbol">: </span><a href="../-color-sampling/index.html"><span class="identifier">ColorSampling</span></a></code></td>
+<code><span class="keyword">val </span><span class="identifier">colorSampling</span><span class="symbol">: </span><a href="../-color-sampling/index.html"><span class="identifier">ColorSampling</span></a></code>
+<p>The type of color sampler to use for this color type</p>
+</td>
 </tr>
 <tr>
 <td>
 <p><a href="component-size.html">componentSize</a></p>
 </td>
 <td>
-<code><span class="keyword">val </span><span class="identifier">componentSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+<code><span class="keyword">val </span><span class="identifier">componentSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>The size (in bytes) for this color type</p>
+</td>
 </tr>
 <tr>
 <td>
 <p><a href="compressed.html">compressed</a></p>
 </td>
 <td>
-<code><span class="keyword">val </span><span class="identifier">compressed</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+<code><span class="keyword">val </span><span class="identifier">compressed</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Specifies if this is a compressed format</p>
+</td>
 </tr>
 </tbody>
 </table>

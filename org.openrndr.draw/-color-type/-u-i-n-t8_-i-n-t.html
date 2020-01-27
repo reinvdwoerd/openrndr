@@ -10,6 +10,7 @@
 <h1>UINT8_INT</h1>
 <a name="org.openrndr.draw.ColorType.UINT8_INT"></a>
 <code><span class="identifier">UINT8_INT</span></code>
+<p>unsigned 8 bit integer type, with integer sampler</p>
 <h3>Inherited Properties</h3>
 <table>
 <tbody>
@@ -18,21 +19,27 @@
 <p><a href="color-sampling.html">colorSampling</a></p>
 </td>
 <td>
-<code><span class="keyword">val </span><span class="identifier">colorSampling</span><span class="symbol">: </span><a href="../-color-sampling/index.html"><span class="identifier">ColorSampling</span></a></code></td>
+<code><span class="keyword">val </span><span class="identifier">colorSampling</span><span class="symbol">: </span><a href="../-color-sampling/index.html"><span class="identifier">ColorSampling</span></a></code>
+<p>The type of color sampler to use for this color type</p>
+</td>
 </tr>
 <tr>
 <td>
 <p><a href="component-size.html">componentSize</a></p>
 </td>
 <td>
-<code><span class="keyword">val </span><span class="identifier">componentSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+<code><span class="keyword">val </span><span class="identifier">componentSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>The size (in bytes) for this color type</p>
+</td>
 </tr>
 <tr>
 <td>
 <p><a href="compressed.html">compressed</a></p>
 </td>
 <td>
-<code><span class="keyword">val </span><span class="identifier">compressed</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+<code><span class="keyword">val </span><span class="identifier">compressed</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>Specifies if this is a compressed format</p>
+</td>
 </tr>
 </tbody>
 </table>
