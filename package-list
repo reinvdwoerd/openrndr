@@ -1,5 +1,9 @@
 $dokka.format:html
 $dokka.linkExtension:html
+$dokka.location:org.openrndr.math$mod_(kotlin.Double, kotlin.Double)org.openrndr.math/kotlin.-double/mod_.html
+$dokka.location:org.openrndr.math$mod_(kotlin.Float, kotlin.Float)org.openrndr.math/kotlin.-float/mod_.html
+$dokka.location:org.openrndr.math$mod_(kotlin.Int, kotlin.Int)org.openrndr.math/kotlin.-int/mod_.html
+$dokka.location:org.openrndr.math$mod_(kotlin.Long, kotlin.Long)org.openrndr.math/kotlin.-long/mod_.html
 $dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Matrix33)org.openrndr.math/kotlin.-double/times.html
 $dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Matrix44)org.openrndr.math/kotlin.-double/times.html
 $dokka.location:org.openrndr.math$times(kotlin.Double, org.openrndr.math.Vector2)org.openrndr.math/kotlin.-double/times.html
