@@ -21,6 +21,7 @@ org.openrndr.color
 org.openrndr.dialogs
 org.openrndr.draw
 org.openrndr.events
+org.openrndr.exceptions
 org.openrndr.extensions
 org.openrndr.ffmpeg
 org.openrndr.filter.color
